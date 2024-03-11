@@ -16,3 +16,11 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+
+<embed 
+       type="text/html" 
+       src="/bokeh/periodic.html"
+       width="1100"
+       height="600"
+       >
+</embed>

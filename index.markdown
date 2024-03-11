@@ -4,10 +4,3 @@
 
 layout: home
 ---
-<embed 
-       type="text/html" 
-       src="/bokeh/periodic.html"
-       width="1100"
-       height="600"
-       >
-</embed>
