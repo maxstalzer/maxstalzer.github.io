@@ -14,7 +14,7 @@ categories: jekyll update
 </embed>
 
 <iframe 
-   src="https://maxstalzer.github.io/jekyll/update/2024/03/11/periodic.html"
+   src="periodic.html"
    width="1100"
    height="600"
 ></iframe>
