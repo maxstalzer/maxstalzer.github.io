@@ -12,3 +12,9 @@ categories: jekyll update
        height="600"
        >
 </embed>
+
+<iframe 
+   src="periodic.html"
+   width="1100"
+   height="600"
+></iframe>
