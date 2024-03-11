@@ -7,14 +7,14 @@ categories: jekyll update
 
 <embed 
        type="text/html" 
-       src="Periodic.html"
+       src="periodic.html"
        width="1100"
        height="600"
        >
 </embed>
 
 <iframe 
-   src="Periodic.html"
+   src="periodic.html"
    width="1100"
    height="600"
 ></iframe>
