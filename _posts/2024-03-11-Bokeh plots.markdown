@@ -14,7 +14,7 @@ categories: jekyll update
 </embed>
 
 <iframe 
-   src="C:\Users\Bruger\Documents\DTU\Semester 6\02806 Social data analysis and visualization\Git Website\maxstalzer.github.io\periodic.html"
+   src="https://maxstalzer.github.io/jekyll/update/2024/03/11/periodic.html"
    width="1100"
    height="600"
 ></iframe>
