@@ -22,7 +22,7 @@ categories: jekyll update
 </embed>
 
 <iframe 
-   src="2024/03/11/Periodic.html"
+   src="../Periodic.html"
    width="1100"
    height="600"
 ></iframe>
