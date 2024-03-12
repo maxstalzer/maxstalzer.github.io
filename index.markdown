@@ -5,12 +5,6 @@
 layout: home
 ---
 Hello
-<embed 
-       type="text/html" 
-       src="Periodic.html"
-       width="1100"
-       height="600"
-       >
 
 <embed type="text/html" src="Crime.html" width="1100" height="600">
 
