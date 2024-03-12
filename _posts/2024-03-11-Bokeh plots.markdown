@@ -13,16 +13,11 @@ categories: jekyll update
        >
 </embed>
 
-<embed 
-       type="text/html" 
-       src="../Crime.html"
-       width="1100"
-       height="600"
-       >
-</embed>
-
-<iframe 
-   src="Crime.html"
-   width="1100"
-   height="600"
-></iframe>
+<iframe src="Crime.html"
+        sandbox="allow-same-origin allow-scripts"
+        width="100%"
+        height="500"
+        scrolling="no"
+        seamless="seamless"
+        frameborder="0">
+</iframe>
