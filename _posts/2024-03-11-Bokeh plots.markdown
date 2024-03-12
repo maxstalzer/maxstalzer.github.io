@@ -12,6 +12,7 @@ categories: jekyll update
        height="600"
        >
 </embed>
+man
 
 <iframe src="Crime.html"
         sandbox="allow-same-origin allow-scripts"
