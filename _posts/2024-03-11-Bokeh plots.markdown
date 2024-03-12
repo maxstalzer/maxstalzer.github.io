@@ -14,10 +14,5 @@ categories: jekyll update
 </embed>
 man
 
-<iframe src="Crime.html"
-        width="100%"
-        height="500"
-        scrolling="no"
-        seamless="seamless"
-        frameborder="0">
-</iframe>
+<iframe src="{{ site.baseurl }}/Crime.html" width="100%" height="500px"></iframe>
+
