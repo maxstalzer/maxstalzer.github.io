@@ -11,4 +11,3 @@ Hello
        width="1100"
        height="600"
        >
-</embed>
