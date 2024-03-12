@@ -19,7 +19,7 @@ You can find the source code for Jekyll at GitHub:
 
 <embed 
        type="text/html" 
-       src="periodic.html"
+       src="Periodic.html"
        width="1100"
        height="600"
        >

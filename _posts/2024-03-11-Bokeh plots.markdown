@@ -13,8 +13,16 @@ categories: jekyll update
        >
 </embed>
 
+<embed 
+       type="text/html" 
+       src="../periodic.html"
+       width="1100"
+       height="600"
+       >
+</embed>
+
 <iframe 
-   src="periodic.html"
+   src="Periodic.html"
    width="1100"
    height="600"
 ></iframe>
