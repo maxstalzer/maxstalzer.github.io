@@ -25,6 +25,6 @@ You can find the source code for Jekyll at GitHub:
        >
 
 <div align="center">
-  <img src="Picture.jpg" height="100" />
+  <img src="{{ site.baseurl }}/Picture.jpg" height="100" />
 
 </div>
