@@ -23,3 +23,8 @@ You can find the source code for Jekyll at GitHub:
        width="1100"
        height="600"
        >
+
+<div align="center">
+  <img src="Picture.jpg" height="100" />
+
+</div>
