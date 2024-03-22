@@ -8,10 +8,6 @@ We created a time-series Bokeh plot showing our selected drug types and normalis
 
 <object type="text/html" data="{{ site.baseurl }}/TimeSeries.html" width="1200" height="800" style="border: none; padding: 0;"></object>
 
-We plotted the occurences of drug related crimes onto a map of San Francisco, coloring by the type of drug involved:
-
-<object type="text/html" data="{{ site.baseurl }}/MapPlot.html" width="1200" height="800" style="border: none; padding: 0;"></object>
-
 ### Notable 
 Citing: 
 * 2011: California decriminalizes marijuana possession (reduced the charge of possession of one ounce of cannabis or less, from a misdemeanor to an infraction, similar to a traffic violation"”a maximum of a $100 fine and no mandatory court appearance or criminal record) **(SB 1449)** 
@@ -20,3 +16,7 @@ Citing:
 
 
 ### Map: Focus drugs 
+
+We plotted the occurences of drug related crimes onto a map of San Francisco, coloring by the type of drug involved:
+
+<object type="text/html" data="{{ site.baseurl }}/MapPlot.html" width="800" height="400" style="border: none; padding: 0;"></object>
