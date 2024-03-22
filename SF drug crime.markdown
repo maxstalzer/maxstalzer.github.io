@@ -1,13 +1,16 @@
-# San Francisco drug scene 
+
 Intro """" Intro 
 
 Selecting DRUG/NARCOTIC category and sorting them by involved drugs, e.g. 'POSSESSION OF MARIJUANA', 'SALE OF MARIJUANA', 'POSSESSION OF MARIJUANA FOR SALES', 'TRANSPORTATION OF MARIJUANA','FURNISHING MARIJUANA' categories will all appear under a name **Marijuana** in our plots. 
 
 
-We created a time-series Bokeh plot showing our selected drug types and crime count from 2003 to 2017
+We created a time-series Bokeh plot showing our selected drug types and normalised crime count from 2003 to 2017:
 
 <object type="text/html" data="{{ site.baseurl }}/TimeSeries.html" width="1200" height="800" style="border: none; padding: 0;"></object>
 
+We plotted the occurences of drug related crimes onto a map of San Francisco, coloring by the type of drug involved:
+
+<object type="text/html" data="{{ site.baseurl }}/MapPlot.html" width="1200" height="800" style="border: none; padding: 0;"></object>
 
 ### Notable 
 Citing: 

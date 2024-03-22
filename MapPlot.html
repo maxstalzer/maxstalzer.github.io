@@ -1,0 +1,5445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>pydeck</title>
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script src='https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~8.8.*/dist/index.js'></script>
+    <style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#deck-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#deck-container canvas {
+  z-index: 1;
+  background: none;
+}
+    </style>
+  </head>
+  <body>
+    <div id="deck-container">
+    </div>
+  </body>
+  <script>
+    const container = document.getElementById('deck-container');
+    const jsonInput = {
+  "initialViewState": {
+    "bearing": 0,
+    "latitude": 37.7749295,
+    "longitude": -122.4194155,
+    "pitch": 0,
+    "zoom": 10
+  },
+  "layers": [
+    {
+      "@@type": "ScatterplotLayer",
+      "data": [
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.405828840501,
+          "Y": 37.7684749112706,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.417903977564,
+          "Y": 37.7851670875517,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.391522893042,
+          "Y": 37.7324323864471,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.395382931364,
+          "Y": 37.7384053351443,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.407693108529,
+          "Y": 37.7801630691196,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.419930111611,
+          "Y": 37.7868262082156,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.414056291891,
+          "Y": 37.7827931071006,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.407693108529,
+          "Y": 37.7801630691196,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.414242955907,
+          "Y": 37.7837240254478,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.407085601172,
+          "Y": 37.798151367711,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.446933310975,
+          "Y": 37.7700061988358,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.407693108529,
+          "Y": 37.7801630691196,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.430248343917,
+          "Y": 37.769393339413,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.417999278691,
+          "Y": 37.7856407526644,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE FOR SALE",
+          "X": -122.413869632554,
+          "Y": 37.7818621883021,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.417999278691,
+          "Y": 37.7856407526644,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.419930111611,
+          "Y": 37.7868262082156,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "TRANSPORTATION OF MARIJUANA",
+          "X": -122.426084863345,
+          "Y": 37.7301363676772,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.443311949602,
+          "Y": 37.7704697548539,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.412414263581,
+          "Y": 37.7830037964534,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.448578484966,
+          "Y": 37.7697977168831,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.413869632554,
+          "Y": 37.7818621883021,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.446933310975,
+          "Y": 37.7700061988358,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.417999278691,
+          "Y": 37.7856407526644,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF OPIATES FOR SALES",
+          "X": -122.395382931364,
+          "Y": 37.7384053351443,
+          "color": [
+            174,
+            199,
+            232
+          ],
+          "drugtype": "Opium/Opiates"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.410955248906,
+          "Y": 37.7841399509594,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.386962666051,
+          "Y": 37.7383591868919,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.45353456066,
+          "Y": 37.7691662978052,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.426084863345,
+          "Y": 37.7301363676772,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.416293820935,
+          "Y": 37.777493677735,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.398932711095,
+          "Y": 37.7837848211584,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE FOR SALE",
+          "X": -122.414056291891,
+          "Y": 37.7827931071006,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METHADONE FOR SALES",
+          "X": -122.395382931364,
+          "Y": 37.7384053351443,
+          "color": [
+            152,
+            223,
+            138
+          ],
+          "drugtype": "Methadone"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.414433155063,
+          "Y": 37.7846576329256,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.417999278691,
+          "Y": 37.7856407526644,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.412515341356,
+          "Y": 37.7804777480508,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.415127837608,
+          "Y": 37.7797870676495,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.393340760404,
+          "Y": 37.7344139325108,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.413869632554,
+          "Y": 37.7818621883021,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.442764781005,
+          "Y": 37.7696601882348,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.42850845331,
+          "Y": 37.7628896284932,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.415694922134,
+          "Y": 37.7825851968467,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.419641420429,
+          "Y": 37.7854327313929,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.402687653213,
+          "Y": 37.7660754132449,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.435002864298,
+          "Y": 37.7608878061194,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.417104895556,
+          "Y": 37.7743242867908,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.417903977564,
+          "Y": 37.7851670875517,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.392779047703,
+          "Y": 37.7350382675041,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.387709796599,
+          "Y": 37.7406738553828,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.419671780296,
+          "Y": 37.7650501214668,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.407693108529,
+          "Y": 37.7801630691196,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.413869632554,
+          "Y": 37.7818621883021,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.417999278691,
+          "Y": 37.7856407526644,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "TRANSPORTATION OF MARIJUANA",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.421096796936,
+          "Y": 37.7842937802977,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.421195221815,
+          "Y": 37.7847536577561,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.415694922134,
+          "Y": 37.7825851968467,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.450709919144,
+          "Y": 37.7695262270693,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF CONTROLLED SUBSTANCE",
+          "X": -122.414056291891,
+          "Y": 37.7827931071006,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.45353456066,
+          "Y": 37.7691662978052,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.430248343917,
+          "Y": 37.769393339413,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.439846616567,
+          "Y": 37.7766442432053,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN FOR SALES",
+          "X": -122.430047639392,
+          "Y": 37.7788487867396,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.414433155063,
+          "Y": 37.7846576329256,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF CONTROLLED SUBSTANCE",
+          "X": -122.413869632554,
+          "Y": 37.7818621883021,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.419671780296,
+          "Y": 37.7650501214668,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.408953598279,
+          "Y": 37.783287873572,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF HALLUCINOGENIC FOR SALES",
+          "X": -122.446933310975,
+          "Y": 37.7700061988358,
+          "color": [
+            140,
+            86,
+            75
+          ],
+          "drugtype": "Hallucinogenic"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.415127837813,
+          "Y": 37.7797870675637,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "TRANSPORTATION OF MARIJUANA",
+          "X": -122.421195221815,
+          "Y": 37.7847536577561,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.390971734551,
+          "Y": 37.7340152180723,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.419641420429,
+          "Y": 37.7854327313929,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.443311949602,
+          "Y": 37.7704697548539,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.4453467866,
+          "Y": 37.7702081959172,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.409696355558,
+          "Y": 37.7817540588712,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.410768766343,
+          "Y": 37.7832145190013,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE FOR SALE",
+          "X": -122.421949487547,
+          "Y": 37.7884881521135,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.413869632554,
+          "Y": 37.7818621883021,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.415322108652,
+          "Y": 37.7767183581051,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.405071381551,
+          "Y": 37.778068370863,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN FOR SALES",
+          "X": -122.412515341356,
+          "Y": 37.7804777480508,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.414056291891,
+          "Y": 37.7827931071006,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.482372245817,
+          "Y": 37.7667702165366,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.446933310975,
+          "Y": 37.7700061988358,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.415127837608,
+          "Y": 37.7797870676495,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.417104895556,
+          "Y": 37.7743242867908,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.410955248906,
+          "Y": 37.7841399509594,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.421534605247,
+          "Y": 37.7665690318366,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.446119884951,
+          "Y": 37.7909979301775,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.442764781005,
+          "Y": 37.7696601882348,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE FOR SALES",
+          "X": -122.412414263581,
+          "Y": 37.7830037964534,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.450709919144,
+          "Y": 37.7695262270693,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "TRANSPORTATION OF MARIJUANA",
+          "X": -122.407163046954,
+          "Y": 37.7797376338991,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.450709919144,
+          "Y": 37.7695262270693,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.404587539604,
+          "Y": 37.7867316808533,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.387927387609,
+          "Y": 37.7427030847405,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.41812008649,
+          "Y": 37.7603012340397,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.45353456066,
+          "Y": 37.7691662978052,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.417903977564,
+          "Y": 37.7851670875517,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.446933310975,
+          "Y": 37.7700061988358,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.419183096362,
+          "Y": 37.7830998244592,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.405071381551,
+          "Y": 37.778068370863,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE FOR SALE",
+          "X": -122.416769999704,
+          "Y": 37.7795845776674,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.422526328922,
+          "Y": 37.7715962069104,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.45353456066,
+          "Y": 37.7691662978052,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.416948565876,
+          "Y": 37.7804689268479,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "SALE OF CONTROLLED SUBSTANCE",
+          "X": -122.413869632554,
+          "Y": 37.7818621883021,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN FOR SALES",
+          "X": -122.412414263581,
+          "Y": 37.7830037964534,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.387129629359,
+          "Y": 37.7450699666211,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.446933310975,
+          "Y": 37.7700061988358,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.404878690799,
+          "Y": 37.7685314732448,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.414056291891,
+          "Y": 37.7827931071006,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF OPIATES",
+          "X": -122.42600547206,
+          "Y": 37.8002062126533,
+          "color": [
+            174,
+            199,
+            232
+          ],
+          "drugtype": "Opium/Opiates"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.419671780296,
+          "Y": 37.7650501214668,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.407693108529,
+          "Y": 37.7801630691196,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.393340760404,
+          "Y": 37.7344139325108,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.406897563446,
+          "Y": 37.7497181665598,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.405010507128,
+          "Y": 37.7205104070487,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "TRANSPORTATION OF METH-AMPHETAMINE",
+          "X": -122.421949487547,
+          "Y": 37.7884881521135,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.414433155063,
+          "Y": 37.7846576329256,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN FOR SALES",
+          "X": -122.415127837608,
+          "Y": 37.7797870676495,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.422874083058,
+          "Y": 37.7930494293957,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.422123115,
+          "Y": 37.7351537980209,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.419930111611,
+          "Y": 37.7868262082156,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "MAINTAINING PREMISE WHERE NARCOTICS ARE SOLD/USED",
+          "X": -122.420818330445,
+          "Y": 37.7828946450912,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.482372245817,
+          "Y": 37.7667702165366,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.476031718561,
+          "Y": 37.7486451165898,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.414242955907,
+          "Y": 37.7837240254478,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.446933310975,
+          "Y": 37.7700061988358,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.415127837608,
+          "Y": 37.7797870676495,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.445717668922,
+          "Y": 37.7720809772392,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.415317966992,
+          "Y": 37.7807179285998,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "SALE OF CONTROLLED SUBSTANCE",
+          "X": -122.413869632554,
+          "Y": 37.7818621883021,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.414242955907,
+          "Y": 37.7837240254478,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.415317966992,
+          "Y": 37.7807179285998,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.419671780296,
+          "Y": 37.7650501214668,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.422526328922,
+          "Y": 37.7715962069104,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.419183096362,
+          "Y": 37.7830998244592,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.421970919029,
+          "Y": 37.7423752245255,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.446933310975,
+          "Y": 37.7700061988358,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.410955248906,
+          "Y": 37.7841399509594,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.41812008649,
+          "Y": 37.7603012340397,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.418448186101,
+          "Y": 37.7522391652625,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.415508242782,
+          "Y": 37.7816542806076,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.421534605247,
+          "Y": 37.7665690318366,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.417999278691,
+          "Y": 37.7856407526644,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.450709919144,
+          "Y": 37.7695262270693,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.415508242782,
+          "Y": 37.7816542806076,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.450709919144,
+          "Y": 37.7695262270693,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF CONTROLLED SUBSTANCE",
+          "X": -122.414056291891,
+          "Y": 37.7827931071006,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE FOR SALE",
+          "X": -122.413869632554,
+          "Y": 37.7818621883021,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.406867519472,
+          "Y": 37.7889857451928,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.419671780296,
+          "Y": 37.7650501214668,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF CONTROLLED SUBSTANCE",
+          "X": -122.417999278691,
+          "Y": 37.7856407526644,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.415127837608,
+          "Y": 37.7797870676495,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.41029351969,
+          "Y": 37.7822305870036,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.419671780296,
+          "Y": 37.7650501214668,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.417903977564,
+          "Y": 37.7851670875517,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.447331328022,
+          "Y": 37.7899395914165,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.405010507128,
+          "Y": 37.7205104070487,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.416948565876,
+          "Y": 37.7804689268479,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.428203997155,
+          "Y": 37.759691691831,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF CONTROLLED SUBSTANCE",
+          "X": -122.413869632554,
+          "Y": 37.7818621883021,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.448578484966,
+          "Y": 37.7697977168831,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.410768766343,
+          "Y": 37.7832145190013,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.417999278691,
+          "Y": 37.7856407526644,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE FOR SALES",
+          "X": -122.428203997155,
+          "Y": 37.759691691831,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE FOR SALE",
+          "X": -122.414056291891,
+          "Y": 37.7827931071006,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.415508242782,
+          "Y": 37.7816542806076,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.407163046954,
+          "Y": 37.7797376338991,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.419458073153,
+          "Y": 37.7844990197997,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.411979487494,
+          "Y": 37.7809039696758,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.407387172098,
+          "Y": 37.7810688918781,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.406539115148,
+          "Y": 37.7564864109309,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.390689582557,
+          "Y": 37.7352172280077,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.412999075009,
+          "Y": 37.786277459166,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.41967661615,
+          "Y": 37.7658510977435,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.431766025715,
+          "Y": 37.7619422381099,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.453376250788,
+          "Y": 37.7687142722405,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.416374835778,
+          "Y": 37.7644225165568,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "MAINTAINING PREMISE WHERE NARCOTICS ARE SOLD/USED",
+          "X": -122.418562097105,
+          "Y": 37.7841847091303,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF CONTROLLED SUBSTANCE",
+          "X": -122.413893155951,
+          "Y": 37.782346520673,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.446344422532,
+          "Y": 37.7691810469033,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.452540312646,
+          "Y": 37.7683901140691,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF HALLUCINOGENIC FOR SALES",
+          "X": -122.449942040795,
+          "Y": 37.7696796386185,
+          "color": [
+            140,
+            86,
+            75
+          ],
+          "drugtype": "Hallucinogenic"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.416825199786,
+          "Y": 37.787277154617,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.453376250788,
+          "Y": 37.7687142722405,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.409011206639,
+          "Y": 37.7811340568243,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.435015533775,
+          "Y": 37.7135702444117,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.419950057632,
+          "Y": 37.7865904778229,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.391459714269,
+          "Y": 37.7286847085813,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.413564091744,
+          "Y": 37.779514030063,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.405478287283,
+          "Y": 37.7347987740694,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.407474439624,
+          "Y": 37.779911669335,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.443194351845,
+          "Y": 37.7665428336293,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.466204667893,
+          "Y": 37.7725405391593,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.405519715753,
+          "Y": 37.7898606192523,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.415083177799,
+          "Y": 37.7816524457175,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.406867519472,
+          "Y": 37.7889857451928,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.453376250788,
+          "Y": 37.7687142722405,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.406539115148,
+          "Y": 37.7564864109309,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.41824964748,
+          "Y": 37.7872715205959,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.410791677645,
+          "Y": 37.7836952269749,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.416614060876,
+          "Y": 37.786777956045,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.403366417112,
+          "Y": 37.7899452996011,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.458680189782,
+          "Y": 37.7481554692332,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.409268441444,
+          "Y": 37.7837998723601,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.401173275929,
+          "Y": 37.7715097013946,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.446344422532,
+          "Y": 37.7691810469033,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.431979576386,
+          "Y": 37.7800478529923,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.417107256373,
+          "Y": 37.7853238292094,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.409708423721,
+          "Y": 37.7828276498838,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.480527692333,
+          "Y": 37.7428923473249,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.421747650463,
+          "Y": 37.7627436601147,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "SALE OF METH-AMPHETAMINE",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.413893155951,
+          "Y": 37.782346520673,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.469210289942,
+          "Y": 37.7096096121143,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.453376250788,
+          "Y": 37.7687142722405,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.391459714269,
+          "Y": 37.7286847085813,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.426955631709,
+          "Y": 37.769247063207,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.409686191837,
+          "Y": 37.7862042105295,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.413564091744,
+          "Y": 37.779514030063,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.418382008607,
+          "Y": 37.7832583770949,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.416992162344,
+          "Y": 37.7886442171326,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.451890340883,
+          "Y": 37.7698454806831,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.40877066526,
+          "Y": 37.7801357011746,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.466043693475,
+          "Y": 37.7278742751614,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.433743692364,
+          "Y": 37.7259707375737,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF CONTROLLED SUBSTANCE",
+          "X": -122.41487855905,
+          "Y": 37.7826335031541,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN FOR SALES",
+          "X": -122.415436031905,
+          "Y": 37.784585134714,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.409268441444,
+          "Y": 37.7837998723601,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.495502769291,
+          "Y": 37.7487068486863,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.406206824254,
+          "Y": 37.767225340757,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.39940279218,
+          "Y": 37.7911607649989,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.406206824254,
+          "Y": 37.767225340757,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.453512911126,
+          "Y": 37.7686969786551,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.447783070559,
+          "Y": 37.7699549503465,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "MAINTAINING PREMISE WHERE NARCOTICS ARE SOLD/USED",
+          "X": -122.392134062208,
+          "Y": 37.7916972492914,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.398182124025,
+          "Y": 37.7690432950377,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.428388956563,
+          "Y": 37.7743371994009,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.417445475116,
+          "Y": 37.7654718923359,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.428388956563,
+          "Y": 37.7743371994009,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF COCAINE",
+          "X": -122.410791677645,
+          "Y": 37.7836952269749,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.409256096494,
+          "Y": 37.788239899778,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.476708930505,
+          "Y": 37.7803322971369,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.414222704763,
+          "Y": 37.7653250853262,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.453376250788,
+          "Y": 37.7687142722405,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.417295322526,
+          "Y": 37.7862578545865,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.458680189782,
+          "Y": 37.7481554692332,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.407039055082,
+          "Y": 37.7807565183591,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.435015533775,
+          "Y": 37.7135702444117,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE FOR SALE",
+          "X": -122.431289969136,
+          "Y": 37.7720549755537,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.414302052544,
+          "Y": 37.781863316866,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.416992162344,
+          "Y": 37.7886442171326,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.407633520742,
+          "Y": 37.7841893501425,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.41965834371,
+          "Y": 37.7642205603745,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN FOR SALES",
+          "X": -122.412933062384,
+          "Y": 37.7739274524819,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE FOR SALES",
+          "X": -122.429629258891,
+          "Y": 37.7848966681924,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE FOR SALES",
+          "X": -122.415858343095,
+          "Y": 37.7830505366842,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.464944716156,
+          "Y": 37.774384171507,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.407387172098,
+          "Y": 37.7810688918781,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF OPIATES",
+          "X": -122.414900544562,
+          "Y": 37.7827419623926,
+          "color": [
+            174,
+            199,
+            232
+          ],
+          "drugtype": "Opium/Opiates"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.402916155286,
+          "Y": 37.7231457543114,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.408431861057,
+          "Y": 37.7887772719153,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.417107256373,
+          "Y": 37.7853238292094,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.397010347798,
+          "Y": 37.7936404234689,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.426955631709,
+          "Y": 37.769247063207,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.41417943719,
+          "Y": 37.787502483207,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.453376250788,
+          "Y": 37.7687142722405,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "TRANSPORTATION OF COCAINE",
+          "X": -122.429629258891,
+          "Y": 37.7848966681924,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.405895369887,
+          "Y": 37.7867342184983,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.409445484488,
+          "Y": 37.789173205941,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.406713974932,
+          "Y": 37.7168350790666,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.421483131371,
+          "Y": 37.7854421872655,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.41965834371,
+          "Y": 37.7642205603745,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.450682500949,
+          "Y": 37.7690417439297,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.407505446721,
+          "Y": 37.7811304562104,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF CONTROLLED SUBSTANCE",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.420332099593,
+          "Y": 37.7762075768262,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.466204667893,
+          "Y": 37.7725405391593,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.426955631709,
+          "Y": 37.769247063207,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.408136108062,
+          "Y": 37.8078603496682,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.416351987352,
+          "Y": 37.7816031438671,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.400922761049,
+          "Y": 37.794959803128,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.409011206639,
+          "Y": 37.7811340568243,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.418110537872,
+          "Y": 37.7858627664608,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.426955631709,
+          "Y": 37.769247063207,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.405380265874,
+          "Y": 37.7898655845388,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "TRANSPORTATION OF HEROIN",
+          "X": -122.415436031905,
+          "Y": 37.784585134714,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.41249855058,
+          "Y": 37.7670863077713,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.44776112232,
+          "Y": 37.7698464875415,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.413609328985,
+          "Y": 37.784696907904,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.412933062384,
+          "Y": 37.7739274524819,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.405395493939,
+          "Y": 37.7835100715421,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.41965834371,
+          "Y": 37.7642205603745,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE FOR SALES",
+          "X": -122.426530044926,
+          "Y": 37.7249047561813,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.405863212632,
+          "Y": 37.7980228452184,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.406760498327,
+          "Y": 37.7828772647333,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.383187458704,
+          "Y": 37.7316757960484,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.426955631709,
+          "Y": 37.769247063207,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.410135236377,
+          "Y": 37.7841889075267,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METHADONE",
+          "X": -122.42577891406,
+          "Y": 37.7823192392643,
+          "color": [
+            152,
+            223,
+            138
+          ],
+          "drugtype": "Methadone"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.417085357424,
+          "Y": 37.7852153590471,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "UNDER INFLUENCE OF DRUGS IN A PUBLIC PLACE",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            227,
+            119,
+            194
+          ],
+          "drugtype": "Other"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "TRANSPORTATION OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.416374835778,
+          "Y": 37.7644225165568,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.418587172219,
+          "Y": 37.7530186537446,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.449942040795,
+          "Y": 37.7696796386185,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.413609328985,
+          "Y": 37.784696907904,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.416351987352,
+          "Y": 37.7816031438671,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.415436031905,
+          "Y": 37.784585134714,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.409853729941,
+          "Y": 37.7833862379382,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.410928353347,
+          "Y": 37.7836778741124,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE FOR SALE",
+          "X": -122.414263390372,
+          "Y": 37.7817569847968,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.403402402642,
+          "Y": 37.7878609788981,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.480450749459,
+          "Y": 37.7190118676786,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "UNDER INFLUENCE OF DRUGS IN A PUBLIC PLACE",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            227,
+            119,
+            194
+          ],
+          "drugtype": "Other"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.41965834371,
+          "Y": 37.7642205603745,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALES COCAINE BASE/SCHOOLYARD TRAFFICKING ACT VIO",
+          "X": -122.419520367886,
+          "Y": 37.764228935718,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.409268441444,
+          "Y": 37.7837998723601,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "TRANSPORTATION OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.408890252742,
+          "Y": 37.7843467613273,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.423001696251,
+          "Y": 37.7649050761616,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.418382008607,
+          "Y": 37.7832583770949,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.41965834371,
+          "Y": 37.7642205603745,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.41965834371,
+          "Y": 37.7642205603745,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.408034830311,
+          "Y": 37.7907401544868,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.451890340883,
+          "Y": 37.7698454806831,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.488931117103,
+          "Y": 37.7489955458884,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.428388956563,
+          "Y": 37.7743371994009,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.391459714269,
+          "Y": 37.7286847085813,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.429110027872,
+          "Y": 37.7698988323411,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "FORGE OR ALTER PRESCRIPTION",
+          "X": -122.457540234704,
+          "Y": 37.7859461545927,
+          "color": [
+            255,
+            127,
+            14
+          ],
+          "drugtype": "Prescription"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.407877117352,
+          "Y": 37.7803875013555,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.445504497208,
+          "Y": 37.7920353596734,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.407877117352,
+          "Y": 37.7803875013555,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "UNDER THE INFLUENCE OF CONTROLLED SUBSTANCES",
+          "X": -122.426678211606,
+          "Y": 37.7197318823585,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.457507583541,
+          "Y": 37.7711332354432,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.408595110869,
+          "Y": 37.7837069301545,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.410928353347,
+          "Y": 37.7836778741124,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.449942040795,
+          "Y": 37.7696796386185,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.407244087032,
+          "Y": 37.7865647607685,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.407829844146,
+          "Y": 37.7826402567843,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.412933062384,
+          "Y": 37.7739274524819,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.450682500949,
+          "Y": 37.7690417439297,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.426955631709,
+          "Y": 37.769247063207,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.431979576386,
+          "Y": 37.7800478529923,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.453376250788,
+          "Y": 37.7687142722405,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.418562097105,
+          "Y": 37.7841847091303,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.480527692333,
+          "Y": 37.7428923473249,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.407474439624,
+          "Y": 37.779911669335,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.406096297772,
+          "Y": 37.7890234704903,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.417634160005,
+          "Y": 37.787063186215,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.403366417112,
+          "Y": 37.7899452996011,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.421608893207,
+          "Y": 37.7955038710773,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.426955631709,
+          "Y": 37.769247063207,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.405294845215,
+          "Y": 37.7863072236365,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.426955631709,
+          "Y": 37.769247063207,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.41858152677,
+          "Y": 37.7270316193717,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.437252069809,
+          "Y": 37.7717213027751,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.420983990444,
+          "Y": 37.7880688472196,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.41452262258,
+          "Y": 37.7808752665663,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.415448759562,
+          "Y": 37.778293520129,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.392134062208,
+          "Y": 37.7916972492914,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.406760498327,
+          "Y": 37.7828772647333,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.405863212632,
+          "Y": 37.7980228452184,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.453376250788,
+          "Y": 37.7687142722405,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.417445475116,
+          "Y": 37.7654718923359,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.408890252742,
+          "Y": 37.7843467613273,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.404389314967,
+          "Y": 37.7921647064742,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.391011706672,
+          "Y": 37.7359953041609,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.403366417112,
+          "Y": 37.7899452996011,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.421876488492,
+          "Y": 37.7640888944532,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF HALLUCINOGENIC FOR SALES",
+          "X": -122.447783070559,
+          "Y": 37.7699549503465,
+          "color": [
+            140,
+            86,
+            75
+          ],
+          "drugtype": "Hallucinogenic"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.495502769291,
+          "Y": 37.7487068486863,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "PLANTING/CULTIVATING MARIJUANA",
+          "X": -122.488931117103,
+          "Y": 37.7489955458884,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.414263390372,
+          "Y": 37.7817569847968,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.419424383763,
+          "Y": 37.7632323869521,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.406096297772,
+          "Y": 37.7890234704903,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.409268441444,
+          "Y": 37.7837998723601,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.418738265772,
+          "Y": 37.7546172382083,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.419424383763,
+          "Y": 37.7632323869521,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.409445484488,
+          "Y": 37.789173205941,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.407244087032,
+          "Y": 37.7865647607685,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.417634160005,
+          "Y": 37.787063186215,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF OPIATES",
+          "X": -122.452540312646,
+          "Y": 37.7683901140691,
+          "color": [
+            174,
+            199,
+            232
+          ],
+          "drugtype": "Opium/Opiates"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.409662731398,
+          "Y": 37.7765102599173,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.389286347131,
+          "Y": 37.7310998921861,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.39998852115,
+          "Y": 37.7854873412292,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF COCAINE",
+          "X": -122.390689582557,
+          "Y": 37.7352172280077,
+          "color": [
+            148,
+            103,
+            189
+          ],
+          "drugtype": "Cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "SALE OF HEROIN",
+          "X": -122.414029821727,
+          "Y": 37.7823291237659,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "SALE OF BASE/ROCK COCAINE",
+          "X": -122.419520367886,
+          "Y": 37.764228935718,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.408034830311,
+          "Y": 37.7907401544868,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.416991089644,
+          "Y": 37.777074192256,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.453376250788,
+          "Y": 37.7687142722405,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.404847847867,
+          "Y": 37.7951006528052,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.466733030878,
+          "Y": 37.753714592061,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.448739865726,
+          "Y": 37.7702466927234,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.419950057632,
+          "Y": 37.7865904778229,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.466204667893,
+          "Y": 37.7725405391593,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.407387172098,
+          "Y": 37.7810688918781,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.426955631709,
+          "Y": 37.769247063207,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "MAINTAINING PREMISE WHERE NARCOTICS ARE SOLD/USED",
+          "X": -122.419950057632,
+          "Y": 37.7865904778229,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.405380265874,
+          "Y": 37.7898655845388,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.383187458704,
+          "Y": 37.7316757960484,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.423583118335,
+          "Y": 37.7373272692065,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE FOR SALE",
+          "X": -122.431979576386,
+          "Y": 37.7800478529923,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.41747701285,
+          "Y": 37.764357751686,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.448739865726,
+          "Y": 37.7702466927234,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.404793641916,
+          "Y": 37.788804548889,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "PLANTING/CULTIVATING MARIJUANA",
+          "X": -122.390577977348,
+          "Y": 37.7342439948771,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.39192940892,
+          "Y": 37.7344910991058,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.412857126524,
+          "Y": 37.7855804361702,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.414029821727,
+          "Y": 37.7823291237659,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF BASE/ROCK COCAINE",
+          "X": -122.431979576386,
+          "Y": 37.7800478529923,
+          "color": [
+            255,
+            152,
+            150
+          ],
+          "drugtype": "Base/rock cocaine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.410699657634,
+          "Y": 37.7869881885308,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.422513037848,
+          "Y": 37.7707107653585,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.415448759562,
+          "Y": 37.778293520129,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "UNDER INFLUENCE OF DRUGS IN A PUBLIC PLACE",
+          "X": -122.403404791479,
+          "Y": 37.775420706711,
+          "color": [
+            227,
+            119,
+            194
+          ],
+          "drugtype": "Other"
+        },
+        {
+          "Descript": "TRANSPORTATION OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.401303579052,
+          "Y": 37.733697890467,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE FOR SALE",
+          "X": -122.457507583541,
+          "Y": 37.7711332354432,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.464628366268,
+          "Y": 37.7397494807705,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.416991089644,
+          "Y": 37.777074192256,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.422188261426,
+          "Y": 37.7726948236861,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF HEROIN",
+          "X": -122.414029821727,
+          "Y": 37.7823291237659,
+          "color": [
+            31,
+            119,
+            180
+          ],
+          "drugtype": "Heroin"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.452289660492,
+          "Y": 37.7256933575703,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.438098378037,
+          "Y": 37.7806388583762,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.473265575096,
+          "Y": 37.7534294984843,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.410699657634,
+          "Y": 37.7869881885308,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.411071423064,
+          "Y": 37.7817511307229,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "LOITERING WHERE NARCOTICS ARE SOLD/USED",
+          "X": -122.419183096362,
+          "Y": 37.7830998244592,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "LOITERING WHERE NARCOTICS ARE SOLD/USED",
+          "X": -122.420818330445,
+          "Y": 37.7828946450912,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA FOR SALES",
+          "X": -122.451288061231,
+          "Y": 37.7693967099165,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.424360563656,
+          "Y": 37.7709874049037,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "SALE OF MARIJUANA",
+          "X": -122.451288061231,
+          "Y": 37.7693967099165,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.41565370001,
+          "Y": 37.7787196511256,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "POSSESSION OF NARCOTICS PARAPHERNALIA",
+          "X": -122.41565370001,
+          "Y": 37.7787196511256,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "LOITERING WHERE NARCOTICS ARE SOLD/USED",
+          "X": -122.419183096362,
+          "Y": 37.7830998244592,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.437236101904,
+          "Y": 37.7803348745141,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "HYPODERMIC NEEDLE OR SYRINGE, POSSESSION",
+          "X": -122.420966200659,
+          "Y": 37.7552939346637,
+          "color": [
+            227,
+            119,
+            194
+          ],
+          "drugtype": "Other"
+        },
+        {
+          "Descript": "POSSESSION OF METH-AMPHETAMINE",
+          "X": -122.390670834934,
+          "Y": 37.736611643242,
+          "color": [
+            255,
+            187,
+            120
+          ],
+          "drugtype": "Methamphetamine"
+        },
+        {
+          "Descript": "LOITERING WHERE NARCOTICS ARE SOLD/USED",
+          "X": -122.41965834371,
+          "Y": 37.7642205603745,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF CONTROLLED SUBSTANCE",
+          "X": -122.378268018481,
+          "Y": 37.7323807302226,
+          "color": [
+            196,
+            156,
+            148
+          ],
+          "drugtype": "Narcotics/Substance"
+        },
+        {
+          "Descript": "POSSESSION OF MARIJUANA",
+          "X": -122.390670834934,
+          "Y": 37.736611643242,
+          "color": [
+            214,
+            39,
+            40
+          ],
+          "drugtype": "Marijuana"
+        },
+        {
+          "Descript": "PRESCRIPTION, FORGE OR ALTER (4390 B&P)",
+          "X": -122.402692008641,
+          "Y": 37.7654113280146,
+          "color": [
+            255,
+            127,
+            14
+          ],
+          "drugtype": "Prescription"
+        }
+      ],
+      "filled": true,
+      "getFillColor": "@@=color",
+      "getLineColor": [
+        0,
+        0,
+        0
+      ],
+      "getPosition": "@@=[X, Y]",
+      "id": "ab405767-5d99-465d-9fc8-f573c2451587",
+      "lineWidthMinPixels": 1,
+      "opacity": 0.3,
+      "pickable": true,
+      "radiusMaxPixels": 20,
+      "radiusMinPixels": 8,
+      "radiusScale": 3,
+      "radiusUnit": "@@=pixels",
+      "stroked": false
+    }
+  ],
+  "mapProvider": "carto",
+  "mapStyle": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+  "views": [
+    {
+      "@@type": "MapView",
+      "controller": true
+    }
+  ]
+};
+    const tooltip = {'html': '{Descript}', 'style': {'backgroundColor': 'rgba(0, 0, 0, 0.7)', 'color': 'white', 'fontFamily': 'Arial, sans-serif'}};
+    const customLibraries = null;
+    const configuration = null;
+
+    const deckInstance = createDeck({
+                  container,
+      jsonInput,
+      tooltip,
+      customLibraries,
+      configuration
+    });
+
+  </script>
+</html>
