@@ -7,4 +7,4 @@ layout: home
 
 Hello
 
-This is an analysis of [drug crimes in San Francisco.] (maxstalzer.github.io/SF drug crime) 
+This is an analysis of drug crimes in San Francisco. <a href="maxstalzer.github.io/SF drug crime" target="_blank"> Here </a>
