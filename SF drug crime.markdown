@@ -6,7 +6,8 @@ Selecting DRUG/NARCOTIC category and sorting them by involved drugs, e.g. 'POSSE
 
 We created a time-series Bokeh plot showing our selected drug types and crime count from 2003 to 2017
 
-<embed type="text/html" src="{{ site.baseurl }}/TimeSeries.html">
+<object type="text/html" data="{{ site.baseurl }}/TimeSeries.html" width="800" height="400" style="border: none; padding: 0;"></object>
+
 
 ### Notable 
 Citing: 
