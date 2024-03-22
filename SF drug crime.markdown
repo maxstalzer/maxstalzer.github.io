@@ -1,6 +1,10 @@
 
 Intro """" Intro 
 
+Through the past 20 years drugs have been an ever present issue in the city of San Francisco. Analyzing the public record of police data from the years 2003-2018 we can uncover some of the trends in the different types of drugs involved. 
+
+The police data we looked at is available online at **insertlink**, it includes every crime from 2003 into 2018. For each crime it includes information like the time, type, district and coordinates.
+
 Selecting DRUG/NARCOTIC category and sorting them by involved drugs, e.g. 'POSSESSION OF MARIJUANA', 'SALE OF MARIJUANA', 'POSSESSION OF MARIJUANA FOR SALES', 'TRANSPORTATION OF MARIJUANA','FURNISHING MARIJUANA' categories will all appear under a name **Marijuana** in our plots. 
 
 
