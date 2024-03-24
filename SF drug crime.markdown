@@ -22,3 +22,100 @@ Citing:
 We plotted the occurences of drug related crimes onto a map of San Francisco, coloring by the type of drug involved:
 
 <object type="text/html" data="{{ site.baseurl }}/MapPlot.html" width="800" height="400" style="border: none; padding: 0;"></object>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Month Picker</title>
+    <!-- Import Pydeck and DeckGL CSS -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/pydeck@0.7.0/dist/pydeck.css" />
+    <style>
+        /* Add custom CSS styles here */
+        #map {
+            position: relative;
+            width: 100%;
+            height: 600px; /* Adjust height as needed */
+        }
+        #month-picker {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="month-picker">
+        <label for="month">Select Month:</label>
+        <input type="month" id="month" name="month">
+        <button onclick="filterByMonth()">Apply</button>
+    </div>
+
+    <!-- Import Pydeck and DeckGL JavaScript -->
+    <script type="module">
+        import {Deck} from 'https://unpkg.com/pydeck@0.7.0';
+        import {ScatterplotLayer} from '@deck.gl/layers';
+
+        const data = ${json_data}; // Replace with your JSON data
+
+        // Function to filter data by selected month
+        function filterByMonth() {
+            const selectedMonth = document.getElementById('month').value;
+            const filteredData = data.filter(item => {
+                return item.Date.startsWith(selectedMonth);
+            });
+
+            renderMap(filteredData);
+        }
+
+        // Function to render the map with filtered data
+        function renderMap(filteredData) {
+            const layer = new ScatterplotLayer({
+                id: 'scatterplot-layer',
+                data: filteredData,
+                pickable: true,
+                opacity: 0.3,
+                stroked: false,
+                filled: true,
+                radiusScale: 3,
+                radiusMinPixels: 8,
+                radiusMaxPixels: 20,
+                lineWidthMinPixels: 1,
+                getPosition: d => [d.X, d.Y],
+                getFillColor: d => d.color,
+                getLineColor: [0, 0, 0],
+                radiusUnit: 'pixels'
+            });
+
+            const viewState = {
+                latitude: 37.7749295,
+                longitude: -122.4194155,
+                zoom: 11,
+                bearing: 0,
+                pitch: 0
+            };
+
+            const deck = new Deck({
+                layers: [layer],
+                initialViewState: viewState,
+                container: 'map',
+                getTooltip: ({object}) => ({
+                    html: `<div>${object.Descript}</div><div>${object.Date}</div>`,
+                    style: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                        color: 'white',
+                        fontFamily: 'Helvetica, sans-serif'
+                    }
+                })
+            });
+        }
+
+        // Initial rendering of the map
+        renderMap(data);
+    </script>
+</body>
+</html>
