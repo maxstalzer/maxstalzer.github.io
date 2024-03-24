@@ -24,4 +24,6 @@ We plotted the occurences of drug related crimes onto a map of San Francisco, co
 <object type="text/html" data="{{ site.baseurl }}/MapPlot.html" width="800" height="400" style="border: none; padding: 0;"></object>
 
 
+## Normalised Drug Category Count for each Police District
 
+<object type="text/html" data="{{ site.baseurl }}/DistrictDrugs.html" width="1200" height="400" style="border: none; padding: 0;"></object>
