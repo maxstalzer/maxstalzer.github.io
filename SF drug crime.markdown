@@ -21,7 +21,7 @@ Citing:
 
 We plotted the occurences of drug related crimes onto a map of San Francisco, coloring by the type of drug involved:
 
-<object type="text/html" data="{{ site.baseurl }}/MapPlot.html" width="800" height="400" style="border: none; padding: 0;"></object>
+<object type="text/html" data="{{ site.baseurl }}/scatterplot_layer.html" width="800" height="400" style="border: none; padding: 0;"></object>
 
 
 
