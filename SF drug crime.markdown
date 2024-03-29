@@ -27,7 +27,7 @@ We plotted the occurences of drug related crimes onto a map of San Francisco of 
 
 * **Southern**: District with high rate of criminality across all categories, that being said district borders tenderloin and large amount of crimes are reported near district borders 
  
-
+**Figure 3:** Normalised Drug Type count by Police District:
 
 <object type="text/html" data="{{ site.baseurl }}/DistrictDrugs.html" width="1200" height="400" style="border: none; padding: 0;"></object>
 
