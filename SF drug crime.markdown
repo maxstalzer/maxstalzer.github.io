@@ -3,7 +3,7 @@ Through the past 20 years drugs have been an ever present issue in the city of S
 
 The police data we looked at is available online at <a href="https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-Historical-2003/tmnf-yvry/about_data" target="_blank">data.sfgov.org</a>, it includes every crime incident from January 2003 till May 2018 in San Francisco. For each crime it includes information such as the time and date, the district, a description, etc. We filtered the dataset to only look at those incidents in which the category was drug/narcotic and then labelled by the drug involved e.g. possession of marijuana, sale of marijuana and transportation of marijuana all fall under the drug type "marijuana", and so on with all the types of drugs seen in San Francisco.
 
-## Figure 1: Time-Series Plot showing normalised Crime Counts from 2003 to 2017:
+## Figure 1: Time-Series Plot showing normalised Crime Counts from 2003 to 2017
 
 <object type="text/html" data="{{ site.baseurl }}/TimeSeries.html" width="1200" height="400" style="border: none; padding: 0;"></object>
 
@@ -13,7 +13,7 @@ Citing:
 * **2014**: California reclassifies certain drug possession offenses **(Proposition 47)**, In San Francisco, law enforcement has responded by scaling back efforts against drugs, de-emphasizing incarceration and effectively allowing public drug use. [The New York Times, 2024](https://www.nytimes.com/2024/01/31/upshot/san-francisco-drug-crisis.html)
 * **2016**: The Adult Use of Marijuana Act, Legalization of certain amounts of marijuana as adults for personal use. [California Judicial Branch](https://www.courts.ca.gov/prop64.htm) 
 
-## Figure 2: Map scatter plot of the Drug Crimes.
+## Figure 2: Map scatter plot of the Drug Crimes
 
 We plotted the occurences of drug related crimes onto a map of San Francisco of April 2009, showing the selected drug types: 
 
@@ -29,7 +29,7 @@ We decided to plot the points for this month as from the prior plot we saw that 
 
 * **Southern**: District with high rate of criminality across all categories, that being said district borders tenderloin and large amount of crimes are reported near district borders 
  
-## Figure 3: Normalised Drug Type count by Police District:
+## Figure 3: Normalised Drug Type count by Police District
 
 <object type="text/html" data="{{ site.baseurl }}/DistrictDrugs.html" width="1200" height="400" style="border: none; padding: 0;"></object>
 
