@@ -39,6 +39,6 @@ Here we are normalising the count for each district, so the sum of the normalise
 
 ### Notable 
 * Methamphetamine, base/rock cocaine, heroin, opium and methadone show a similar pattern in which district they are most prevalent. Tenderloin is the district in which they constitute the greatest share, which is to be expected given what we see on the map.
-* Marijuana related crime is following a different geographic pattern to these drugs and is relatively more prevalent in the Southern and Park districts.
+* Marijuana related crime is following a different geographic pattern to these drugs and is relatively more prevalent in the Southern and Park districts. Specifically, a section of Market street that is just South of where the Tenderloin district starts and Haight Street leading into Golden Gate Park.
 * Prescription and barbituate related crimes are highly concentrated to the Mission district, when inspecting the exact locations of these crimes we see there are hotspots by the Walgreens Pharmacies and by the Zuckerberg San Francisco General Hospital in the district.
 
