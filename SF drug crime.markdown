@@ -7,6 +7,8 @@ The police data we looked at is available online at <a href="https://data.sfgov.
 
 <object type="text/html" data="{{ site.baseurl }}/TimeSeries.html" width="1200" height="400" style="border: none; padding: 0;"></object>
 
+Here, the count has been normalised for each year, so we are showing how the share of drugs has changed over the years rather than the total count.
+
 ### Notable 
 Citing: 
 * **2011**: California decriminalizes marijuana possession (reduced the charge of possession of one ounce of cannabis or less, from a misdemeanor to an infraction, similar to a traffic violation a maximum of a $100 fine and no mandatory court appearance or criminal record) **(SB 1449)**. [CBS News](https://www.cbsnews.com/texas/news/california-governor-signs-marijuana-decriminalization-bill/)
@@ -25,17 +27,18 @@ We decided to plot the points for this month as from the prior plot we saw that 
 ### Notable 
 * **Tenderloin**: Throughout the years the Tenderloin has kept it's reputation for being the drug, crime and poverty filled district. Streets filled with tents, heroin needles keep the police and in April 2009 the district is the epicenter of Base/Rock Cocaine use. [The New York Times, 2018](https://www.nytimes.com/2024/01/31/upshot/san-francisco-drug-crisis.html) [The San Francisco Standard, 2022](https://sfstandard.com/2022/10/20/how-serious-is-tenderloins-drug-problem-heres-what-city-data-says/)
 
-* **Park**: District with relatively low numbers in drug abuse dominates other districts in marijuana and hallucinogenic related crimes mainly due to it's geographic location, suggesting that police must have different approach when fighting these crimes
+* **Park**: District with relatively low numbers in drug abuse dominates other districts in marijuana and hallucinogenic related crimes mainly due to it's geographic location, suggesting that police must have different approach when fighting these crimes.
 
-* **Southern**: District with high rate of criminality across all categories, that being said district borders tenderloin and large amount of crimes are reported near district borders 
+* **Southern**: District with relative high rate of all drug types, borders with the Tenderloin district so is to be expected.
  
 ## Figure 3: Normalised Drug Type count by Police District
 
 <object type="text/html" data="{{ site.baseurl }}/DistrictDrugs.html" width="1200" height="400" style="border: none; padding: 0;"></object>
 
+Here we are normalising the count for each district, so the sum of the normalised count of all drug types will be 1 for each district. The plot shows how the different drugs constitute the total of narcotic crimes.
+
 ### Notable 
 * Methamphetamine, base/rock cocaine, heroin, opium and methadone show a similar pattern in which district they are most prevalent. Tenderloin is the district in which they constitute the greatest share, which is to be expected given what we see on the map.
 * Marijuana related crime is following a different geographic pattern to these drugs and is relatively more prevalent in the Southern and Park districts.
-* Prescription related crimes are highly concentrated to the Mission district.
-
+* Prescription and barbituate related crimes are highly concentrated to the Mission district, when inspecting the exact locations of these crimes we see there are hotspots by the Walgreens Pharmacies and by the Zuckerberg San Francisco General Hospital in the district.
 
