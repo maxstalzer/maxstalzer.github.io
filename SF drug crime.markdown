@@ -6,7 +6,7 @@ The police data we looked at is available online at <a href="https://data.sfgov.
 
 ## Figure 1: Time-Series Plot showing normalised Crime Counts from 2003 to 2017
 
-<object type="text/html" data="{{ site.baseurl }}/TimeSeries.html" width="1200" height="50vw" style="border: none; padding: 0; width:100%; height:50vw"></object>
+<object type="text/html" data="{{ site.baseurl }}/TimeSeries.html" width="1200" height="400" style="border: none; padding: 0; width:100%; height:50vw"></object>
 
 Here, the count has been normalised for each year, so we are showing how the share of drugs has changed over the years rather than the total count.
 
