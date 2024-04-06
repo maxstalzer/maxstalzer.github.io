@@ -1,4 +1,4 @@
-## Analysis of Drug Crimes in San Francisco
+<h1> Analysis of Drug Crimes in San Francisco </h1>
 
 Through the past 20 years drugs have been an ever present issue in the city of San Francisco. Analyzing the public record of police data we can uncover some of the trends in the different types of drugs involved. 
 
