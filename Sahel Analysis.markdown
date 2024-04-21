@@ -2,18 +2,18 @@
 
 <h1> Introduction </h1>
 
-**What is the Sahel region of Africa?**
+### What is the Sahel region of Africa?
 The Central Sahel is a region in West Africa comprised of the countries Burkina Faso, Mali and Niger. [1]
 
-**What is the situation there?**
+### What is the situation there?
 terror
 
-**What is the Global Terrorism Database?**
+### What is the Global Terrorism Database?**
 big Data
 
 <h1> Groups </h1>
 
-**What are the major terror organisations involved?**
+### What are the major terror organisations involved?
 Through looking at the GTD we found that the most prevalent terrorism organisations were:
 
 1. Unknown
@@ -23,7 +23,7 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 
 explain that the unknown means attacks which were not attributed to any group
 
-**Where are the different groups most prevalent?**
+### Where are the different groups most prevalent?
 
 *Insert a nice map here
 
