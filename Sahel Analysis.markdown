@@ -1,6 +1,6 @@
-<h1> Overview of Terror Attacks in Central Sahel Africa <h2>
+<h2> Overview of Terror Attacks in Central Sahel Africa <h2>
 
-<h2> Introduction </h2>
+<h1> Introduction </h1>
 
 **What is the Sahel region of Africa?**
 The Central Sahel is a region in West Africa comprised of the countries Burkina Faso, Mali and Niger. [1]
@@ -11,7 +11,7 @@ terror
 **What is the Global Terrorism Database?**
 big Data
 
-<h2> Groups </h2>
+<h1> Groups </h1>
 
 **What are the major terror organisations involved?**
 Through looking at the GTD we found that the most prevalent terrorism organisations were:
@@ -33,5 +33,5 @@ explain that the unknown means attacks which were not attributed to any group
 
 **What can we conclude??????????????????**
 
-<h2> Reference List </h2>
+<h1> Reference List </h1>
 [1] <a href="https://acleddata.com/conflict-watchlist-2024/sahel/" target="_blank">acleddata.com</a>
