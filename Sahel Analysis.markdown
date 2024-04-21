@@ -7,7 +7,7 @@ The Central Sahel is a region in West Africa comprised of the countries Burkina 
 
 <h3>What is the situation there?</h3>
 
-**terror**
+<b>terror</b>
 
 <h3>What is the Global Terrorism Database?</h3>
 big Data
