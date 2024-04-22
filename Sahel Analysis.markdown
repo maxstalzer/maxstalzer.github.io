@@ -14,7 +14,7 @@ big Data
 
 <h1> Groups </h1>
 
-<b>What are the major terror organisations involved?</b>
+<b>What are the major terror organisations involved?</b> <br>
 Through looking at the GTD we found that the most prevalent terrorism organisations were:
 
 1. Unknown
