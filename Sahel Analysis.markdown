@@ -1,6 +1,6 @@
 <h2> Overview of Terror Attacks in Central Sahel Africa <h2>
 
-<h1> Introduction </h1>
+<h1> Intro </h1>
 
 <b>What is the Sahel region of Africa? </b>
 The Central Sahel is a region in West Africa comprised of the countries Burkina Faso, Mali and Niger. [1]
@@ -27,6 +27,7 @@ explain that the unknown means attacks which were not attributed to any group
 <b>Where are the different groups most prevalent?</b>
 
 *Insert a nice map here
+<object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="400" style="border: none; padding: 0; width:80%; height:50vw"></object>
 
 <b>What are the differences in terms of attack/target/weapon types between the groups?</b>
 
