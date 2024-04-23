@@ -1,4 +1,4 @@
-# Overview of Terror Attacks in Central Sahel Africa
+<h2> Overview of Terror Attacks in Central Sahel Africa </h2>
 
 ## Intro
 
