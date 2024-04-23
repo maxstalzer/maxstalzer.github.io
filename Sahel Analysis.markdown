@@ -2,14 +2,14 @@
 
 <h1> Intro </h1>
 
-<b>What is the Sahel region of Africa? </b>
+<b>What is the Sahel region of Africa? </b> <br>
 The Central Sahel is a region in West Africa comprised of the countries Burkina Faso, Mali and Niger. [1]
 
-<b>What is the situation there?</b>
+<b>What is the situation there?</b> <br>
 
 <b>terror</b>
 
-<b>What is the Global Terrorism Database?</b>
+<b>What is the Global Terrorism Database?</b> <br>
 big Data
 
 <h1> Groups </h1>
@@ -24,16 +24,16 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 
 explain that the unknown means attacks which were not attributed to any group
 
-<b>Where are the different groups most prevalent?</b>
+<b>Where are the different groups most prevalent?</b> <br>
 
 *Insert a nice map here
 <object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="400" style="border: none; padding: 0; width:80%; height:50vw"></object>
 
-<b>What are the differences in terms of attack/target/weapon types between the groups?</b>
+<b>What are the differences in terms of attack/target/weapon types between the groups?</b> <br>
 
 *insert some nice plots maybe bokeh here 
 
-<b>What can we conclude??????????????????</b>
+<b>What can we conclude??????????????????</b> <br>
 
 <h1> Reference List </h1>
 [1] <a href="https://acleddata.com/conflict-watchlist-2024/sahel/" target="_blank">acleddata.com</a>
