@@ -5,7 +5,7 @@
 <b>What is the Sahel region of Africa? </b> <br>
 The Central Sahel is a region in West Africa comprised of the countries Burkina Faso, Mali and Niger. [1]
 
-<b>What is the situation there?</b> <br>
+**What is the situation there?**
 
 <b>terror</b>
 
