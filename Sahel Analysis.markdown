@@ -3,10 +3,10 @@
 ## Intro
 
 ### What is the Sahel region of Africa?
-The Central Sahel is a region in West Africa comprised of the countries Burkina Faso, Mali and Niger.Political violence is a major issue in each of these countries [1] 
+The Central Sahel is a region in West Africa comprised of the countries Burkina Faso, Mali and Niger.Political violence is a major issue in each of these countries and they have all been subject to [1] 
 
 ### What is the situation there?
-<b>terror</b>
+**terror**
 
 ### What is the Global Terrorism Database?
 big Data
@@ -40,6 +40,7 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 *insert some nice plots maybe bokeh here 
 
 ## Counter Terrorism
+*What have been the major counter terrorism movements or governments involved?
 
 ## Conclusion
 
