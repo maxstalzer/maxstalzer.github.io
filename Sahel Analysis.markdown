@@ -1,6 +1,6 @@
 <h2> Overview of Terror Attacks in Central Sahel Africa <h2>
 
-<h1> Intro </h1>
+## Intro
 
 **What is the Sahel region of Africa?**
 The Central Sahel is a region in West Africa comprised of the countries Burkina Faso, Mali and Niger.Political violence is a major issue in each of these countries [1] 
