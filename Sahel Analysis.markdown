@@ -7,14 +7,9 @@ This region is interesting with Islamic extremism uprising in the last decade an
 ### What is the Sahel region of Africa?
 The Central Sahel is a region in West Africa comprised of the countries Burkina Faso, Mali and Niger.Political violence is a major issue in each of these countries and they have all been subject to [1] 
 Notably leaders of these countries are not even visiting the more remote northern regions of the countries due to lack of control and security there, the ongoing clashes between violent groups and citizens keep causing chaos. Motives for these groups vary, some have feudal territorial claims, fight for political power, gain and control over smuggling routes for human and drug trafficking over sahara. In 2017 UN passed a bill for global powers to intervene and help combat terrorism in the region.[3] France has greatly contributed with it's military powers, Sahel region has been largest Frances offshores active military operation. 
-* US airbase
-* Mention numbers 
-
-### What is the situation there?
-
 
 ### Global Terrorism Database
-It is understandable to argue that the GTD is currently the only database with comprehensive covereage of  global and domestic terrorism. Data base aims to 
+It is understandable to argue that the GTD is currently the only database with comprehensive covereage of  global and domestic terrorism.
 
 Terrorism definition by the UN that as a minimum terrorism is "Terrorism involves the intimidation or coercion of populations or governments through the threat or perpetration of violence, causing death, serious injury or the taking of hostages." [5]
 
