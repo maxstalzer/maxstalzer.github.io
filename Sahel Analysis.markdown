@@ -30,7 +30,7 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 
 ### Where are the different groups most prevalent?
 *Insert a nice map here
-<object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="300" style="border: none; padding: 0; width:100%; height:40%"></object>
+<object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="400" style="border: none; padding: 0; width:100%; height:40%"></object>
 
 *Maybe some kind of plot of groups by country?
 
