@@ -43,37 +43,6 @@ First observation is the significant growth of islamic groups. Some of them have
 
 <object type="text/html" data="{{ site.baseurl }}/GroupCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
-# Select Bokeh Plot
-
-<select id="plotSelector">
-  <option value="plot1">Plot 1</option>
-  <option value="plot2">Plot 2</option>
-  <option value="plot3">Plot 3</option>
-</select>
-
-<div id="plotContainer">
-  <iframe id="plot1" src="path_to_plot1.html" style="display: none;"></iframe>
-  <iframe id="plot2" src="path_to_plot2.html" style="display: none;"></iframe>
-  <iframe id="plot3" src="path_to_plot3.html" style="display: none;"></iframe>
-</div>
-
-<script>
-  const plotSelector = document.getElementById('plotSelector');
-  const plotContainer = document.getElementById('plotContainer');
-
-  plotSelector.addEventListener('change', function() {
-    const selectedPlot = plotSelector.value;
-    const iframes = plotContainer.getElementsByTagName('iframe');
-
-    for (let i = 0; i < iframes.length; i++) {
-      iframes[i].style.display = 'none';
-    }
-
-    const selectedIframe = document.getElementById(selectedPlot);
-    selectedIframe.style.display = 'block';
-  });
-</script>
-
 
 ### Where are the different groups most prevalent?
 
