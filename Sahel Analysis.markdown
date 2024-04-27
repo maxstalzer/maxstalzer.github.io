@@ -32,6 +32,10 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 *Insert a nice map here
 <object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="400" style="border: none; padding: 0; width:100%; height:40%"></object>
 
+<object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="100%" height="50vw" style="border: none; padding: 0"></object>
+
+<object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="500" style="border: none; padding: 0; width:100%; height:50%"></object>
+
 *Maybe some kind of plot of groups by country?
 
 
