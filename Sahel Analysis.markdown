@@ -33,8 +33,10 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 
 1. Unknown
 2. JNIM
-3. ISIS
-5. Boko Haram 
+3. ISGS
+4. Boko Haram 
+First observation is the significant growth of islamic groups. Some of them have pledged alliegance to Al Qaeda (JNIM) or ISIS (ISGS). These groups largeley focus on local targets, sometimes targeting also western interests. Unknown attacks that have no affiliation to any group was an important area of interest to scope potential patterns and understand the situation better. 
+
 
 *Maybe the bar plot of count over the years with the different groups stacked.
 *explain that the unknown means attacks which were not attributed to any group
@@ -54,11 +56,16 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 
 ## Counter Terrorism
 *What have been the major counter terrorism movements or governments involved?
+Since Sahel lacks strong and stable politics and governance counter-terrorism operations have greatly struggled to initiate a strong counter-terrorism policy, corruption and lack of power in rural threaten stability. Extremist groups take advantage of this mismanagement and cause disruption in the government. Sahel also holds significant natural resource wealth, making it one of Africa's most affluent areas in terms of natural assets. Placing region in the centre of attention in a global scale. With Russia, France and USA beeing largest military conrtinbutors to the region. 
+Local military police are very often involved in attacks and to this day from 2010-2020 there have been reportet xx causalties from military deaths. 
 * G5 Joint Task Force 
+In 2014 a group of 5 Sahel region countries comprised of five member countres: Burkina Faso, Mali, Niger, Chad and Mauritania. Created to provide the institutional and enforcement structure to provide security within. In support of local governmen as well as cooperate and exchange criminal and ectremism information globally.  [6]
+
 * France 
 There are several groups involved in combating the regime with each having their own underlying reasons and motives, french government has had an on and off military pressence in sahel since 19th century as of today France wants to publilcly show their alligiency to democratic uprising in the region as well as defend their assets such as oil fields owned by total and uranium mines.
+    Frances involvment is not particularly taken well by the local authorities and recent regime changes has had a significantly impacted public opinion of french government 
 * USA 
-
+Data up till 2020 shows that United States had contributed 6 billion Usd in military aid in the region. Although us physical military footprint has remained small. It's pressence with training programms and other assistance have been noticable. They have also developed TSCTP (The Trans-Sahara Counterterrorism Partnership) as a multi year partnership to combat terrorism and strenghten security of the region. 
 
 ## Conclusion
 
@@ -72,3 +79,5 @@ There are several groups involved in combating the regime with each having their
 [3] <a href="https://www.nytimes.com/2017/06/21/world/africa/security-council-sahel-france-united-states.html?searchResultPosition=33" target="_blank">acleddata.com</a>
 [4] <a href="https://journals.sagepub.com/doi/abs/10.1177/0975087813512070?casa_token=uC2_FQvgR64AAAAA%3AEGSftNC8XdQ5oiqxzdzqYh5r8JTnZ0hfnRNji74Zexeu1jLnnMQBLqxv-L6Go3K1CoXIAw6IsvsxXg&journalCode=ioaa" target="_blank">acleddata.com</a>
 [5] <a href="https://www.ohchr.org/en/terrorism" target="_blank">acleddata.com</a>
+[6] <a href="https://www.interpol.int/es/Delitos/Terrorismo/Proyectos-de-lucha-contra-el-terrorismo/G5-Sahel" target="_blank">acleddata.com</a>
+[7] <a href="https://crsreports.congress.gov/product/pdf/TE/TE10044" target="_blank">acleddata.com</a>
