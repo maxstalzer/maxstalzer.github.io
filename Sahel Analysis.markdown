@@ -39,6 +39,7 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 *Maybe the bar plot of count over the years with the different groups stacked.
 *explain that the unknown means attacks which were not attributed to any group
 
+<object type="text/html" data="{{ site.baseurl }}/GroupCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
 
 ### Where are the different groups most prevalent?
