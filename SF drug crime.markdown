@@ -6,7 +6,7 @@ The police data we looked at is available online at <a href="https://data.sfgov.
 
 ## Figure 1: Time-Series Plot showing normalised Crime Counts from 2003 to 2017
 
-<object type="text/html" data="{{ site.baseurl }}/SF_Plots/TimeSeries.html" width="1200" height="400" style="border: none; padding: 0; width:80%; height:50vw"></object>
+<object type="text/html" data="{{ site.baseurl }}/SF_Plots/TimeSeries.html" width="800" height="400" style="border: none; padding: 0; width:100%; height:50vw"></object>
 
 Here, the count has been normalised for each year, so we are showing how the share of drugs has changed over the years rather than the total count.
 
@@ -21,7 +21,7 @@ Citing:
 We plotted the occurences of drug related crimes onto a map of San Francisco of April 2009, showing the selected drug types: 
 
 <center><span style="font-size: 12px; font-weight: bold;"></span>Crimes related to drugs documented in April 2009</center>
-<object type="text/html" data="{{ site.baseurl }}/SF_Plots/scatterplot_layer.html"  width="1200" height="400" style="border: none; padding: 0; width:80%; height:50vw"></object>
+<object type="text/html" data="{{ site.baseurl }}/SF_Plots/scatterplot_layer.html"  width="100%" height="50vw" style="border: none; padding: 0"></object>
 
 We decided to plot the points for this month as from the prior plot we saw that all drug related crimes seemed to peak around this time and then gradually decrease. By applying a small amount of "jitter" to each point which had the same coordinates as another we avoid them being stacked on top of eachother and not being differentiable.
 
