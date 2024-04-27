@@ -20,11 +20,13 @@ Terrorism definition by the UN that as a minimum terrorism is "Terrorism involve
 
 It is important to seperate government oppression, war crimes, genocides, guerilla warfare from this set as although they can be far worse, these events do not fall into the category of the definition. 
 
+### Plot 1 INDex, Terror data, world map?? Need an intro plot 
+
 ### Lack of coverage 
 When looking at central Sahel region and important note is that some of attacks, especially attacks dating prior 2010 go unnoticed and do not get reported due to local issues, lack of media coverage and the threat that is posed on getting exposed when reporting events such as terrorist attacks. Media outlets in west africa are fewer and poorly funded with certain report bias e.g. of attacks with governmental or political motives in the region getting sponsorerd or tolerated by the local authorities. [4]
 
 ## Terror Groups
-As modern world has set more focus in combaing the Islamic extremists and global Jihad, reporting of attacks greatly imporoved with groups such as Boko Haram had revceived greater notice due to it's islamic attakcs on Nigerian government and dominantly Christian society as  [5]
+As modern world has set more focus in combating the Islamic extremists and global Jihad, reporting of attacks greatly imporoved with groups such as Boko Haram had revceived greater notice due to it's islamic attakcs on Nigerian government and dominantly Christian society as  [5]
 
 ### What are the major terror organisations involved?
 Through looking at the GTD we found that the most prevalent terrorism organisations were:
@@ -32,7 +34,6 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 1. Unknown
 2. JNIM
 3. ISIS
-4. toms
 5. Boko Haram 
 
 *Maybe the bar plot of count over the years with the different groups stacked.
@@ -60,7 +61,7 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 
 ## Counter Terrorism
 *What have been the major counter terrorism movements or governments involved?
-
+* G5 Joint Task Force 
 * France 
 There are several groups involved in combating the regime with each having their own underlying reasons and motives, french government has had an on and off military pressence in sahel since 19th century as of today France wants to publilcly show their alligiency to democratic uprising in the region as well as defend their assets such as oil fields owned by total and uranium mines.
 * USA 
