@@ -63,8 +63,8 @@ First observation is the significant growth of islamic groups. Some of them have
         <option value="plot3">Weapon Types</option>
     </select>
 
-    <object id="plot1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html" class="bokeh-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:40vw"></object>
-    <object id="plot2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html" class="bokeh-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:40vw"></object>
+    <object id="plot1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html" class="bokeh-plot" width="800" height="400" style="display: block; border: none; padding: 0; width:100%; height:40vw"></object>
+    <object id="plot2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html" class="bokeh-plot" width="1400" height="1000" style="display: none; border: none; padding: 0; width:100%; height:40vw"></object>
     <object id="plot3" type="text/html" data="{{ site.baseurl }}/weaponTypeNorm.html" class="bokeh-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:40vw"></object>
 
     <!-- <iframe id="plot1" src="attackTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe> 
