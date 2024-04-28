@@ -63,9 +63,9 @@ First observation is the significant growth of islamic groups. Some of them have
         <option value="plot3">Weapon Types</option>
     </select>
 
-    <object id="plot1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
-    <object id="plot2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
-    <object id="plot3" type="text/html" data="{{ site.baseurl }}/weaponTypeNorm.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
+    <object id="plot1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html" class="bokeh-plot" width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
+    <object id="plot2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html" class="bokeh-plot" width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
+    <object id="plot3" type="text/html" data="{{ site.baseurl }}/weaponTypeNorm.html" class="bokeh-plot" width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
     <!-- <iframe id="plot1" src="attackTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe> 
     <iframe id="plot2" src="targetTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe>
