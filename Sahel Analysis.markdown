@@ -55,7 +55,7 @@ First observation is the significant growth of islamic groups. Some of them have
     </script>
 </head>
 <body>
-    <h1>Show graph:</h1>
+    Show graph:
 
     <select id="plotSelector" onchange="showPlot(this.value)">
         <option value="plot1">Attack Types</option>
