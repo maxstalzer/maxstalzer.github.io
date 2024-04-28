@@ -38,7 +38,6 @@ First observation is the significant growth of islamic groups. Some of them have
 
 <object type="text/html" data="{{ site.baseurl }}/GroupCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>Bokeh Plot Selector</title>
@@ -56,12 +55,12 @@ First observation is the significant growth of islamic groups. Some of them have
     </script>
 </head>
 <body>
-    <h1>Select Bokeh Plot</h1>
+    <h1>Show graph:</h1>
 
     <select id="plotSelector" onchange="showPlot(this.value)">
-        <option value="plot1">Plot 1</option>
-        <option value="plot2">Plot 2</option>
-        <option value="plot3">Plot 3</option>
+        <option value="plot1">Attack Types</option>
+        <option value="plot2">Target Types</option>
+        <option value="plot3">Weapon Types</option>
     </select>
 
     <iframe id="plot1" src="attackTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe>
