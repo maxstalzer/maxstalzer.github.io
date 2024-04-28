@@ -55,7 +55,7 @@ First observation is the significant growth of islamic groups. Some of them have
     </script>
 </head>
 <body>
-    Show graph:
+    Normalise graph for:
 
     <select id="plotSelector" onchange="showPlot(this.value)">
         <option value="plot1">Attack Types</option>
@@ -63,7 +63,10 @@ First observation is the significant growth of islamic groups. Some of them have
         <option value="plot3">Weapon Types</option>
     </select>
 
-    <iframe id="plot1" src="attackTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe>
+    <object id="plot1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
+
+    <!-- <iframe id="plot1" src="attackTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe> -->
+
     <iframe id="plot2" src="targetTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe>
     <iframe id="plot3" src="weaponTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe>
 </body>
