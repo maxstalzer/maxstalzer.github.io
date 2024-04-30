@@ -26,17 +26,19 @@ As modern world has set more focus in combating the Islamic extremists and globa
 ### What are the major terror organisations involved?
 Through looking at the GTD we found that the most prevalent terrorism organisations were:
 
-1. Unknown
-2. JNIM
-3. ISGS
-4. Boko Haram 
-First observation is the significant growth of islamic groups. Some of them have pledged alliegance to Al Qaeda (JNIM) or ISIS (ISGS). These groups largeley focus on local targets, sometimes targeting also western interests. Unknown attacks that have no affiliation to any group was an important area of interest to scope potential patterns and understand the situation better. 
+<object type="text/html" data="{{ site.baseurl }}/GroupCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
+
+1. **Unknown:** The largest group shown on the plot is, by far, the incidents where the affiliated group is unknown. This means while recording the incident it was unclear which group was behind the attack and no group claimed responsibility.
+2. **JNIM:** Jama'at Nasr al-Islam wal Muslimin, formed in March of 2017 when the four groups Ansar al-Din, al-Murabitun, the Macina Liberation Front (MLF), and the Sahara Emirate subgroup of al-Qa'ida in the Lands of the Islamic Maghreb (AQIM) merged together. The leader has pledged allegiance to the emirs of AQIM, al-Qa'ida and the Taliban. This group is based in Mali but has attacked all across the Sahel region. [6]
+3. **Muslim Extremists:** An umbrella term where the incident was likely committed by one of the other islamic groups mentioned here.
+4. **Boko Haram:** Refer to themselves as Jama'atu Ahl as-Sunnah li-Da'awati wal-Jihad (translates to "People Committed to the Prophet's Teachings for Propagation and Jihad") was founded in 2002 in Nigeria. In July 2010 the previous second-in-command took control, threatened western influence in Nigeria and pledged allegiance to al-Qa'ida. Capability and activities increased greatly in 2014. [7]
+5. **Other:** The groups which were not in the top 14 most active were labelled "Other". Together these make up the fifth largest group. The three largest organisation in it were Fulani extremists, Al-Mua'qi'oon Biddam Brigade (Those who Sign with Blood) and the Movement of Niger People for Justice (MNJ) with 11, 10 and 9 attacks respectively.
+6. **ISGS:** The Islamic State in the Greater Sahara, formed from a division from the Movement for Oneness and Jihad in West Africa (MUJAO) group. Leader pledged allegiance to ISIS in May of 2015 but this was recognised only in October of 2016. Started out more active in western Niger and the Menaka region in Mali, but has since also been attacking in northern Burkina Faso. [8]
+7. **AQIM:** Al-Qa'ida in the Lands of the Islamic Maghreb mainly based in Algeria was originally founded in 1998 as the Salafist Group for Preaching and Combat (GSPC) but was renamed after joining al-Qa'ida in September of 2006. In 2012 the group, working with local Tuareg national elements, took control of some cities in northern Mali. They were fought back by the French military intervention in 2013 and lost the territory as well as some important members. They have been regrouping since 2015 and have had several attacks on United Nations forces present in the region. [9]
 
 
 *Maybe the bar plot of count over the years with the different groups stacked.
 *explain that the unknown means attacks which were not attributed to any group
-
-<object type="text/html" data="{{ site.baseurl }}/GroupCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
 
 ### Where are the different groups most prevalent?
@@ -44,6 +46,7 @@ We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso a
 
 <object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
+We notice how the majority of attacks are roughly concentrated to the bordering region that is northern Burkina Faso and southern Mali as well as some in western Niger. The "Unknown" and "Muslim Extremist" attacks are especially concentrated to this area. We see for JNIM how some attacks follow along settlements by the Niger river in Mali, such as through the cities of Timbuktu and Gao. All but three of Boko Haram's attacks were in Niger, and the majority are very concentrated to the eastern border with Nigeria around Lake Chad as well as some more towards the border with Burkina Faso in the west. ISGS attacks are found almost exclusively along the southern border of Mali.
 
 ### What are the differences in terms of attack/target/weapon types between the groups?
 <html>
@@ -104,5 +107,13 @@ Data up till 2020 shows that United States had contributed 6 billion Usd in mili
 [3] <a href="https://www.nytimes.com/2017/06/21/world/africa/security-council-sahel-france-united-states.html?searchResultPosition=33" target="_blank">acleddata.com</a>
 [4] <a href="https://journals.sagepub.com/doi/abs/10.1177/0975087813512070?casa_token=uC2_FQvgR64AAAAA%3AEGSftNC8XdQ5oiqxzdzqYh5r8JTnZ0hfnRNji74Zexeu1jLnnMQBLqxv-L6Go3K1CoXIAw6IsvsxXg&journalCode=ioaa" target="_blank">acleddata.com</a>
 [5] <a href="https://www.ohchr.org/en/terrorism" target="_blank">acleddata.com</a>
+
+[6] <a href="https://www.dni.gov/nctc/ftos/jnim_fto.html" target="_blank">JNIM info</a>
+[7] <a href="https://www.dni.gov/nctc/groups/boko_haram.html" target="_blank">Boko Haram info</a>
+[8] <a href="https://ecfr.eu/special/sahel_mapping/isgs" target="_blank">ISGS info</a>
+[9] <a href="https://www.dni.gov/nctc/groups/aqim.html" target="_blank">AQIM info</a>
+
+
+
 [6] <a href="https://www.interpol.int/es/Delitos/Terrorismo/Proyectos-de-lucha-contra-el-terrorismo/G5-Sahel" target="_blank">acleddata.com</a>
 [7] <a href="https://crsreports.congress.gov/product/pdf/TE/TE10044" target="_blank">acleddata.com</a>
