@@ -49,6 +49,9 @@ We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso a
 We notice how the majority of attacks are roughly concentrated to the bordering region that is northern Burkina Faso and southern Mali as well as some in western Niger. The "Unknown" and "Muslim Extremist" attacks are especially concentrated to this area. We see for JNIM how some attacks follow along settlements by the Niger river in Mali, such as through the cities of Timbuktu and Gao. All but three of Boko Haram's attacks were in Niger, and the majority are very concentrated to the eastern border with Nigeria around Lake Chad as well as some more towards the border with Burkina Faso in the west. ISGS attacks are found almost exclusively along the southern border of Mali.
 
 ### What are the differences in terms of attack/target/weapon types between the groups?
+
+For each group we found what share of their incidents are in the different categories of attack, target and weapon types. Below click to show graph for the different types, hover on the bars to see what share that category constitutes.
+
 <html>
 <head>
     <title>Bokeh Plot Selector</title>
@@ -82,7 +85,7 @@ We notice how the majority of attacks are roughly concentrated to the bordering 
 </body>
 </html>
 
-* **Normalised by attack types:** We see that for most attack types the Unknown group takes up the largest share. Excluding the Unknown group; Muslim extremists and ISGS had the most assassinations, JNIM had most bombing/explosions, Muslim extremists and JNIM had most armed assault. Facility/infrastructure attacks were done in the largest share by Muslim extremists when excluding the Unknown group. For hostage taking the unknown group had a slightly smaller share and other had a larger.
+* **Normalised by attack types:** 
 
 * **Normalised by target types:** 
 
