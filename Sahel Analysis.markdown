@@ -35,11 +35,11 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 5. **Other:** The groups which were not in the top 14 most active were labelled "Other". Together these make up the fifth largest group. The three largest organisation in it were Fulani extremists, Al-Mua'qi'oon Biddam Brigade (Those who Sign with Blood) and the Movement of Niger People for Justice (MNJ) with 11, 10 and 9 attacks respectively.
 6. **ISGS:** The Islamic State in the Greater Sahara, formed from a division from the Movement for Oneness and Jihad in West Africa (MUJAO) group. Leader pledged allegiance to ISIS in May of 2015 but this was recognised only in October of 2016. Started out more active in western Niger and the Menaka region in Mali, but has since also been attacking in northern Burkina Faso. [8]
 7. **AQIM:** Al-Qa'ida in the Lands of the Islamic Maghreb mainly based in Algeria was originally founded in 1998 as the Salafist Group for Preaching and Combat (GSPC) but was renamed after joining al-Qa'ida in September of 2006. In 2012 the group, working with local Tuareg national elements, took control of some cities in northern Mali. They were fought back by the French military intervention in 2013 and lost the territory as well as some important members. They have been regrouping since 2015 and have had several attacks on United Nations forces present in the region. [9]
-
+8. **Ansar al-Dine (Mali):** Formed from the aforementioned AQIM group in November of 2011 to establish an Islamic State in Mali. After the 2012 coup of Mali the group seized control over territory in the north, they were then fought back by the French intervention but re-emerged in 2016 and merged with three other groups to form JNIM in 2017. [10]
+9. **MUJAO:** Movement for Oneness and Jihad in West Africa, split from AQIM in October 2011. More focused on the Sahel region than AQIM. Split in 2015 and part of the members later join either ISGS or JNIM.
 
 *Maybe the bar plot of count over the years with the different groups stacked.
 *explain that the unknown means attacks which were not attributed to any group
-
 
 ### Where are the different groups most prevalent?
 We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso and Niger. Each point is sized by the number of deaths and colored by the affiliated terror organisation. Hovering over a point shows more details on that attack. Clicking once on a terror group in the legend will hide/unhide it from the map, while double clicking will isolate only this group.
@@ -100,18 +100,17 @@ Data up till 2020 shows that United States had contributed 6 billion Usd in mili
 ### What can we conclude??????????????????
 
 
-
 ## Reference List
-[1] <a href="https://acleddata.com/conflict-watchlist-2024/sahel/" target="_blank">acleddata.com</a>
-[2] <a href="https://www.visionofhumanity.org/maps/global-terrorism-index/#/" target="_blank">acleddata.com</a>
-[3] <a href="https://www.nytimes.com/2017/06/21/world/africa/security-council-sahel-france-united-states.html?searchResultPosition=33" target="_blank">acleddata.com</a>
-[4] <a href="https://journals.sagepub.com/doi/abs/10.1177/0975087813512070?casa_token=uC2_FQvgR64AAAAA%3AEGSftNC8XdQ5oiqxzdzqYh5r8JTnZ0hfnRNji74Zexeu1jLnnMQBLqxv-L6Go3K1CoXIAw6IsvsxXg&journalCode=ioaa" target="_blank">acleddata.com</a>
-[5] <a href="https://www.ohchr.org/en/terrorism" target="_blank">acleddata.com</a>
-
-[6] <a href="https://www.dni.gov/nctc/ftos/jnim_fto.html" target="_blank">JNIM info</a>
-[7] <a href="https://www.dni.gov/nctc/groups/boko_haram.html" target="_blank">Boko Haram info</a>
-[8] <a href="https://ecfr.eu/special/sahel_mapping/isgs" target="_blank">ISGS info</a>
-[9] <a href="https://www.dni.gov/nctc/groups/aqim.html" target="_blank">AQIM info</a>
+[1] <a href="https://acleddata.com/conflict-watchlist-2024/sahel/" target="_blank">acleddata.com</a> </br>
+[2] <a href="https://www.visionofhumanity.org/maps/global-terrorism-index/#/" target="_blank">acleddata.com</a> </br>
+[3] <a href="https://www.nytimes.com/2017/06/21/world/africa/security-council-sahel-france-united-states.html?searchResultPosition=33" target="_blank">acleddata.com</a> </br>
+[4] <a href="https://journals.sagepub.com/doi/abs/10.1177/0975087813512070?casa_token=uC2_FQvgR64AAAAA%3AEGSftNC8XdQ5oiqxzdzqYh5r8JTnZ0hfnRNji74Zexeu1jLnnMQBLqxv-L6Go3K1CoXIAw6IsvsxXg&journalCode=ioaa" target="_blank">acleddata.com</a> </br>
+[5] <a href="https://www.ohchr.org/en/terrorism" target="_blank">acleddata.com</a> </br>
+[6] <a href="https://www.dni.gov/nctc/ftos/jnim_fto.html" target="_blank">JNIM info</a> </br>
+[7] <a href="https://www.dni.gov/nctc/groups/boko_haram.html" target="_blank">Boko Haram info</a> </br>
+[8] <a href="https://ecfr.eu/special/sahel_mapping/isgs" target="_blank">ISGS info</a> </br>
+[9] <a href="https://www.dni.gov/nctc/groups/aqim.html" target="_blank">AQIM info</a> </br>
+[10] <a href="https://www.dni.gov/nctc/ftos/ansar_al_dine_fto.html" target="_blank">Ansar al-Dine info</a>
 
 
 
