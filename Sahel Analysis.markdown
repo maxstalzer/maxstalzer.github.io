@@ -101,15 +101,15 @@ Data up till 2020 shows that United States had contributed 6 billion Usd in mili
 
 
 ## Reference List
-[1] <a href="https://acleddata.com/conflict-watchlist-2024/sahel/" target="_blank">acleddata.com</a> </br>
-[2] <a href="https://www.visionofhumanity.org/maps/global-terrorism-index/#/" target="_blank">acleddata.com</a> </br>
-[3] <a href="https://www.nytimes.com/2017/06/21/world/africa/security-council-sahel-france-united-states.html?searchResultPosition=33" target="_blank">acleddata.com</a> </br>
-[4] <a href="https://journals.sagepub.com/doi/abs/10.1177/0975087813512070?casa_token=uC2_FQvgR64AAAAA%3AEGSftNC8XdQ5oiqxzdzqYh5r8JTnZ0hfnRNji74Zexeu1jLnnMQBLqxv-L6Go3K1CoXIAw6IsvsxXg&journalCode=ioaa" target="_blank">acleddata.com</a> </br>
-[5] <a href="https://www.ohchr.org/en/terrorism" target="_blank">acleddata.com</a> </br>
-[6] <a href="https://www.dni.gov/nctc/ftos/jnim_fto.html" target="_blank">JNIM info</a> </br>
-[7] <a href="https://www.dni.gov/nctc/groups/boko_haram.html" target="_blank">Boko Haram info</a> </br>
-[8] <a href="https://ecfr.eu/special/sahel_mapping/isgs" target="_blank">ISGS info</a> </br>
-[9] <a href="https://www.dni.gov/nctc/groups/aqim.html" target="_blank">AQIM info</a> </br>
+[1] <a href="https://acleddata.com/conflict-watchlist-2024/sahel/" target="_blank">acleddata.com</a> <br />
+[2] <a href="https://www.visionofhumanity.org/maps/global-terrorism-index/#/" target="_blank">acleddata.com</a> <br />
+[3] <a href="https://www.nytimes.com/2017/06/21/world/africa/security-council-sahel-france-united-states.html?searchResultPosition=33" target="_blank">acleddata.com</a> <br />
+[4] <a href="https://journals.sagepub.com/doi/abs/10.1177/0975087813512070?casa_token=uC2_FQvgR64AAAAA%3AEGSftNC8XdQ5oiqxzdzqYh5r8JTnZ0hfnRNji74Zexeu1jLnnMQBLqxv-L6Go3K1CoXIAw6IsvsxXg&journalCode=ioaa" target="_blank">acleddata.com</a> <br />
+[5] <a href="https://www.ohchr.org/en/terrorism" target="_blank">acleddata.com</a> <br />
+[6] <a href="https://www.dni.gov/nctc/ftos/jnim_fto.html" target="_blank">JNIM info</a> <br />
+[7] <a href="https://www.dni.gov/nctc/groups/boko_haram.html" target="_blank">Boko Haram info</a> <br />
+[8] <a href="https://ecfr.eu/special/sahel_mapping/isgs" target="_blank">ISGS info</a> <br />
+[9] <a href="https://www.dni.gov/nctc/groups/aqim.html" target="_blank">AQIM info</a> <br />
 [10] <a href="https://www.dni.gov/nctc/ftos/ansar_al_dine_fto.html" target="_blank">Ansar al-Dine info</a>
 
 
