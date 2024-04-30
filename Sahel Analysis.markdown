@@ -75,9 +75,9 @@ We notice how the majority of attacks are roughly concentrated to the bordering 
     </select>
 
 
-    <object id="plot1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: block; border: none; padding: 0; width:120%; height:40vw"></object>
-    <object id="plot2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:40vw"></object>
-    <object id="plot3" type="text/html" data="{{ site.baseurl }}/weaponTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:40vw"></object>
+    <object id="plot1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: block; border: none; padding: 0; width:120%; height:60vw"></object>
+    <object id="plot2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:60vw"></object>
+    <object id="plot3" type="text/html" data="{{ site.baseurl }}/weaponTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:60vw"></object>
 
 </body>
 </html>
