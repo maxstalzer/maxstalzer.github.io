@@ -82,6 +82,10 @@ We notice how the majority of attacks are roughly concentrated to the bordering 
 </body>
 </html>
 
+* **Normalised by attack types:** We see that for most attack types the Unknown group takes up the largest share. Excluding the Unknown group; Muslim extremists and ISGS had the most assassinations, JNIM had most bombing/explosions, Muslim extremists and JNIM had most armed assault. Facility/infrastructure attacks were done in the largest share by Muslim extremists when excluding the Unknown group. For hostage taking the unknown group had a slightly smaller share and other had a larger.
+
+* **Normalised by target types:** 
+
 ## Counter Terrorism
 *What have been the major counter terrorism movements or governments involved?
 Since Sahel lacks strong and stable politics and governance counter-terrorism operations have greatly struggled to initiate a strong counter-terrorism policy, corruption and lack of power in rural threaten stability. Extremist groups take advantage of this mismanagement and cause disruption in the government. Sahel also holds significant natural resource wealth, making it one of Africa's most affluent areas in terms of natural assets. Placing region in the centre of attention in a global scale. With Russia, France and USA beeing largest military conrtinbutors to the region. 
