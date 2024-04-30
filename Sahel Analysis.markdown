@@ -38,6 +38,14 @@ First observation is the significant growth of islamic groups. Some of them have
 
 <object type="text/html" data="{{ site.baseurl }}/GroupCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
+
+### Where are the different groups most prevalent?
+We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso and Niger. Each point is sized by the number of deaths and colored by the affiliated terror organisation. Hovering over a point shows more details on that attack. Clicking once on a terror group in the legend will hide/unhide it from the map, while double clicking will isolate only this group.
+
+<object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
+
+
+### What are the differences in terms of attack/target/weapon types between the groups?
 <html>
 <head>
     <title>Bokeh Plot Selector</title>
@@ -62,28 +70,14 @@ First observation is the significant growth of islamic groups. Some of them have
         <option value="plot2">Target Types</option>
         <option value="plot3">Weapon Types</option>
     </select>
-
+    
+    </br>
     <object id="plot1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: block; border: none; padding: 0; width:120%; height:40vw"></object>
     <object id="plot2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:40vw"></object>
     <object id="plot3" type="text/html" data="{{ site.baseurl }}/weaponTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:40vw"></object>
 
-    <!-- <iframe id="plot1" src="attackTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe> 
-    <iframe id="plot2" src="targetTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe>
-    <iframe id="plot3" src="weaponTypeNorm.html" class="bokeh-plot" style="display: none; width: 800px; height: 600px;"></iframe> -->
 </body>
 </html>
-
-
-### Where are the different groups most prevalent?
-
-<object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
-
-*Maybe some kind of plot of groups by country?
-
-
-
-### What are the differences in terms of attack/target/weapon types between the groups?
-*insert some nice plots maybe bokeh here 
 
 ## Counter Terrorism
 *What have been the major counter terrorism movements or governments involved?
