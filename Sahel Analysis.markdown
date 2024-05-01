@@ -87,7 +87,10 @@ For each group we found what share of their incidents are in the different categ
 
 * **Normalised by attack types:** 
 
-* **Normalised by target types:** 
+
+* **Normalised by target types:**
+
+* **Normalised by weapon types:**
 
 ## Counter Terrorism
 *What have been the major counter terrorism movements or governments involved?
