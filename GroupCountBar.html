@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.3.4.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="f833856e-ac85-4ca0-b809-22b41fbb4987" data-root-id="p5231" style="display: contents;"></div>
+  
+    <script type="application/json" id="p5265">
+      {"d642cf64-f539-4130-b070-c8a7a24b9ff0":{"version":"3.3.4","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p5231","attributes":{"height":350,"x_range":{"type":"object","name":"FactorRange","id":"p5241","attributes":{"factors":["Unknown","JNIM","Muslim extremists","Boko Haram","Other","ISGS","AQIM","Ansar al-Dine (Mali)","MUJAO","Tuareg extremists","Ansar al-Islam (Burkina Faso)","MNLA","Tuareg Guerrillas","FLM","CMA"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p5233","attributes":{"start":0}},"x_scale":{"type":"object","name":"CategoricalScale","id":"p5242"},"y_scale":{"type":"object","name":"LinearScale","id":"p5243"},"title":{"type":"object","name":"Title","id":"p5234","attributes":{"text":"Number of Incidents by Terror Group","align":"center"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p5260","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p5254","attributes":{"selected":{"type":"object","name":"Selection","id":"p5255","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p5256"},"data":{"type":"map","entries":[["x",["Unknown","JNIM","Muslim extremists","Boko Haram","Other","ISGS","AQIM","Ansar al-Dine (Mali)","MUJAO","Tuareg extremists","Ansar al-Islam (Burkina Faso)","MNLA","Tuareg Guerrillas","FLM","CMA"]],["top",{"type":"ndarray","array":{"type":"bytes","data":"iwIAAMcAAADFAAAAegAAAGQAAABOAAAAQQAAADYAAAAyAAAAKAAAACIAAAAbAAAAEQAAAA4AAAANAAAA"},"shape":[15],"dtype":"int32","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p5261","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p5262"}}},"glyph":{"type":"object","name":"VBar","id":"p5257","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"top"},"fill_color":{"type":"value","value":"black"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p5258","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"top"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"black"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p5259","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"top"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"black"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p5240","attributes":{"tools":[{"type":"object","name":"HoverTool","id":"p5263","attributes":{"renderers":"auto","tooltips":[["Group","@x"],["Count","@top"]]}}]}},"toolbar_location":null,"left":[{"type":"object","name":"LinearAxis","id":"p5249","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p5250","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p5251"},"axis_label":"Count","major_label_policy":{"type":"object","name":"AllLabels","id":"p5252"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p5244","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p5245"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p5246"},"axis_label":"Group Name","major_label_orientation":0.5,"major_label_policy":{"type":"object","name":"AllLabels","id":"p5247"}}}],"center":[{"type":"object","name":"Grid","id":"p5248","attributes":{"axis":{"id":"p5244"},"grid_line_color":null}},{"type":"object","name":"Grid","id":"p5253","attributes":{"dimension":1,"axis":{"id":"p5249"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p5265').textContent;
+              const render_items = [{"docid":"d642cf64-f539-4130-b070-c8a7a24b9ff0","roots":{"p5231":"f833856e-ac85-4ca0-b809-22b41fbb4987"},"root_ids":["p5231"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
