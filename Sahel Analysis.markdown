@@ -85,10 +85,9 @@ For each group we found what share of their incidents are in the different categ
 </body>
 </html>
 
-* **Normalised by attack types:** 
+* **Normalised by attack types:** We see the most common attack type for the six largest groups was armed assault, for the next three largest bombing/explosion and for the remaining again armed assault. The group which had largest share of armed assault were the Tuareg Guerillas with almost 90% of their attacks being in this category. 
 
-
-* **Normalised by target types:**
+* **Normalised by target types:** 
 
 * **Normalised by weapon types:**
 
