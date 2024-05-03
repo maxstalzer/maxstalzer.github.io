@@ -97,12 +97,14 @@ For each group we found what share of their incidents are in the different categ
 *What have been the major counter terrorism movements or governments involved?
 Since Sahel lacks strong and stable politics and governance counter-terrorism operations have greatly struggled to initiate a strong counter-terrorism policy, corruption and lack of power in rural threaten stability. Extremist groups take advantage of this mismanagement and cause disruption in the government. Sahel also holds significant natural resource wealth, making it one of Africa's most affluent areas in terms of natural assets. Placing region in the centre of attention in a global scale. With Russia, France and USA being largest military conrtinbutors to the region. 
 Local military police are very often involved in attacks and to this day from 2010-2020 there have been xx reported causalties from military deaths. 
+
 * G5 Joint Task Force 
 In 2014 a group of 5 Sahel region countries comprised of five member countres: Burkina Faso, Mali, Niger, Chad and Mauritania. Created to provide the institutional and enforcement structure to provide security within. In support of local government as well as cooperate and exchange criminal and extremism information globally. [11]
 
 * France 
 There are several groups involved in combating the regime with each having their own underlying reasons and motives, french government has had an on and off military presence in sahel since 19th century, as of today France wants to publicly show their alligiance to democratic uprising in the region as well as defend their assets such as oil fields owned by total and uranium mines.
-    French involvment is not particularly taken well by the local authorities and recent regime changes has had a significantly impacted public opinion of french government 
+French involvment is not particularly taken well by the local authorities and recent regime changes have significantly impacted public opinion of french government 
+
 * USA 
 Data up till 2020 shows that the United States had contributed 6 billion USD in military aid in the region. Although US physical military footprint has remained small. It's presence with training programms and other assistance have been noticeable. They have also developed TSCTP (The Trans-Sahara Counterterrorism Partnership) as a multi year partnership to combat terrorism and strenghten security of the region. [12]
 
