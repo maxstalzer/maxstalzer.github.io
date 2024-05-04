@@ -1,6 +1,6 @@
 <h2> Overview of Terror Attacks in Central Sahel Africa </h2>
 
-## Intro
+## Introduction
 Initial work was to look for currently highly affected regions by terrorism using statistics from the global terrorism index [1] or our own exploratory map plots, we understood that the Central Sahel region is currently one of the most terrorism affected areas in the world.
 This region is interesting with Islamic extremism uprising in the last decade and major islamic terrorist powers taking advantage of the poor and remote regions of south-sahara, with boko haram, ISGS (Islamic State in Greater Sahara) had been or are activiely affiliated with Islamic state, as well as Jama’at Nusrat al-Islam wal-Muslimim (JNIM) affiliated with al-Qa'ida and with governements failing to provide security and power to defeat these groups, terror and fear has taken regions economy in time of uncertainty.
 
@@ -13,9 +13,8 @@ It is reasonable to argue that the GTD is currently the only database with compr
 
 The United Nations states that as a minimum terrorism is defined as "Terrorism involves the intimidation or coercion of populations or governments through the threat or perpetration of violence, causing death, serious injury or the taking of hostages." [4]
 
-It is important to seperate government oppression, war crimes, genocides, guerilla warfare from this set as although they can be far worse, these events do not fall into the category of the definition. 
+It is important to separate government oppression, war crimes, genocides, guerilla warfare from this set as although they can be far worse, these events do not fall into the category of the definition. 
 
-### Plot 1 INDex, Terror data, world map?? Need an intro plot 
 Plotting terrorism incidents by country for sub-saharan Africa:
 <object type="text/html" data="{{ site.baseurl }}/choroplethMap.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
@@ -30,7 +29,7 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 
 <object type="text/html" data="{{ site.baseurl }}/GroupCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
-1. **Unknown:** The largest group shown on the plot is, by far, the incidents where the affiliated group is unknown. This means while recording the incident it was unclear which group was behind the attack and no group claimed responsibility.
+1. **Unknown:** The largest group shown on the plot is, by far, the incidents where the affiliated group is unknown. This means while recording the incident it was unclear which group was behind the attack and none claimed responsibility.
 2. **JNIM:** Jama'at Nasr al-Islam wal Muslimin, formed in March of 2017 when the four groups Ansar al-Din, al-Murabitun, the Macina Liberation Front (MLF), and the Sahara Emirate subgroup of al-Qa'ida in the Lands of the Islamic Maghreb (AQIM) merged together. The leader has pledged allegiance to the emirs of AQIM, al-Qa'ida and the Taliban. This group is based in Mali but has attacked all across the Sahel region. [6]
 3. **Muslim Extremists:** An umbrella term where the incident was likely committed by one of the other islamic groups mentioned here.
 4. **Boko Haram:** Refer to themselves as Jama'atu Ahl as-Sunnah li-Da'awati wal-Jihad (translates to "People Committed to the Prophet's Teachings for Propagation and Jihad") was founded in 2002 in Nigeria. In July 2010 the previous second-in-command took control, threatened western influence in Nigeria and pledged allegiance to al-Qa'ida. Capability and activities increased greatly in 2014. [7]
@@ -41,7 +40,6 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 9. **MUJAO:** Movement for Oneness and Jihad in West Africa, split from AQIM in October 2011. More focused on the Sahel region than AQIM. Split in 2015 and part of the members later join either ISGS or JNIM.
 
 *Maybe the bar plot of count over the years with the different groups stacked.
-*explain that the unknown means attacks which were not attributed to any group
 
 ### Where are the different groups most prevalent?
 We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso and Niger. Each point is sized by the number of deaths and colored by the affiliated terror organisation. Hovering over a point shows more details on that attack. Clicking once on a terror group in the legend will hide/unhide it from the map, while double clicking will isolate only this group.
@@ -57,6 +55,42 @@ For each group we found what share of their incidents are in the different categ
 <html>
 <head>
     <title>Bokeh Plot Selector</title>
+    <style>
+        /* Style for dropdown select */
+        .select-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        .select-wrapper select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 10px 40px 10px 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+            width: 200px;
+            border-radius: 5px;
+        }
+        .select-wrapper select:focus {
+            outline: none;
+        }
+        .select-wrapper::after {
+            content: '\25BC';
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        /* Style for options */
+        .select-wrapper select option {
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
     <script>
         function showPlot(plotId) {
             var plots = document.getElementsByClassName("bokeh-plot");
@@ -116,17 +150,13 @@ Data up till 2020 shows that the United States had contributed 6 billion USD in 
 ## Reference List
 [1] <a href="https://www.visionofhumanity.org/maps/global-terrorism-index/#/" target="_blank">visionofhumanity.org, Global Terrorism Index</a> <br />
 [2] <a href="https://acleddata.com/conflict-watchlist-2024/sahel/" target="_blank">acleddata.com, Sahel Background</a> <br />
-
 [3] <a href="https://www.nytimes.com/2017/06/21/world/africa/security-council-sahel-france-united-states.html?searchResultPosition=33" target="_blank">nytimes.com, United Nations in Africa</a> <br />
-
 [4] <a href="https://www.ohchr.org/" target="_blank">ohchr.org, Terrorism Definition</a> <br />
 [5] <a href="https://journals.sagepub.com/doi/abs/10.1177/0975087813512070?casa_token=uC2_FQvgR64AAAAA%3AEGSftNC8XdQ5oiqxzdzqYh5r8JTnZ0hfnRNji74Zexeu1jLnnMQBLqxv-L6Go3K1CoXIAw6IsvsxXg&journalCode=ioaa" target="_blank">Sage Journals, Missing Terrorism Data</a> <br />
-
 [6] <a href="https://www.dni.gov/nctc/ftos/jnim_fto.html" target="_blank">dni.gov, JNIM info</a> <br />
 [7] <a href="https://www.dni.gov/nctc/groups/boko_haram.html" target="_blank">dni.gov, Boko Haram info</a> <br />
 [8] <a href="https://ecfr.eu/special/sahel_mapping/isgs" target="_blank">ecfr.eu, ISGS info</a> <br />
 [9] <a href="https://www.dni.gov/nctc/groups/aqim.html" target="_blank">dni.gov, AQIM info</a> <br />
 [10] <a href="https://www.dni.gov/nctc/ftos/ansar_al_dine_fto.html" target="_blank">dni.gov, Ansar al-Dine info</a>
-
 [11] <a href="https://www.interpol.int/es/Delitos/Terrorismo/Proyectos-de-lucha-contra-el-terrorismo/G5-Sahel" target="_blank">Interpol.int, G5 Sahel</a>
 [12] <a href="https://crsreports.congress.gov/product/pdf/TE/TE10044" target="_blank">CRS Reports, US Counterterrorism in Africa</a>
