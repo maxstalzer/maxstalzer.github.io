@@ -121,11 +121,11 @@ For each group we found what share of their incidents are in the different categ
 </body>
 </html>
 
-* **Normalised by attack types:** We see the most common attack type for the six largest groups was armed assault, for the next three largest bombing/explosion and for the remaining again armed assault. The group which had largest share of armed assault were the Tuareg Guerillas with almost 90% of their attacks being in this category. 
+* **Normalised by attack types:** We see the most common attack type for the six largest groups was armed assault, for the next three largest (AQIM, Ansar al-Dine (Mali) and MUJAO) it is bombings and for the remaining again armed assault. The group which had largest share of armed assault were the Tuareg Guerillas with almost 88% of their attacks being in this category. 
 
-* **Normalised by target types:** 
+* **Normalised by target types:** Over half of JNIM attacks were on Military which is significantly more than the other groups. Boko Haram on the contrary has over half of its attacks on Private Citizens & Property, while Ansar al-Dine (Mali) least frequently targeted this category. Notable also is Ansar al-Islam (Burkina Faso) targetting Police significantly more than any group.
 
-* **Normalised by weapon types:**
+* **Normalised by weapon types:** The muslim extremist group showed a larger share of their attacks being perpetrated using Firearms compared to the other top groups. Again by the trend seen in the attack types plot AQIM, Ansar al-Dine (Mali) and MUJAO used a larger share of explosives in their attacks. The Tuareg Guerillas and CMA used almost exclusively Firearms in their attacks.
 
 ## Counter Terrorism
 *What have been the major counter terrorism movements or governments involved?
