@@ -42,7 +42,7 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 *Maybe the bar plot of count over the years with the different groups stacked.
 
 ### Where are the different groups most prevalent?
-We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso and Niger. Each point is sized by the number of deaths and colored by the affiliated terror organisation. Hovering over a point shows more details on that attack. Clicking once on a terror group in the legend will hide/unhide it from the map, while double clicking will isolate only this group.
+We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso and Niger. Each point is sized by the number of deaths and colored by the select option. Hovering over a point shows more details on that attack. Clicking once on an entry in the legend will hide/unhide it from the map, while double clicking will isolate only this group.
 
 <html>
 <head>
@@ -122,9 +122,8 @@ We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso a
 </body>
 </html>
 
-
-
-We notice how the majority of attacks are roughly concentrated to the bordering region that is northern Burkina Faso and southern Mali as well as some in western Niger. The "Unknown" and "Muslim Extremist" attacks are especially concentrated to this area. We see for JNIM how some attacks follow along settlements by the Niger river in Mali, such as through the cities of Timbuktu and Gao. All but three of Boko Haram's attacks were in Niger, and the majority are very concentrated to the eastern border with Nigeria around Lake Chad as well as some more towards the border with Burkina Faso in the west. ISGS attacks are found almost exclusively along the southern border of Mali.
+We notice how the majority of attacks are roughly concentrated to the bordering region that is northern Burkina Faso and southern Mali as well as some in western Niger. 
+* **Groups:** The "Unknown" and "Muslim Extremist" attacks are especially concentrated to this bordering area. We see for JNIM how some attacks follow along settlements by the Niger river in Mali, such as through the cities of Timbuktu and Gao. All but three of Boko Haram's attacks were in Niger, and the majority are very concentrated to the eastern border with Nigeria around Lake Chad as well as some more towards the border with Burkina Faso in the west. ISGS attacks are found almost exclusively along the southern border of Mali. We also see that most of the attacks with larger number of deaths were not perpetrated by the unknown group.
 
 ### What are the differences in terms of attack/target/weapon types between the groups?
 
