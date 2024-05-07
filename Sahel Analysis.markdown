@@ -25,7 +25,7 @@ When looking at central Sahel region and important note is that some of attacks,
 
 ## Terror Groups
 
-Through looking at the GTD we found that the most prevalent terrorism organisations were:
+Using the Global Terrorism Database we can get the number of incidents perpetrated by each group. Hovering over the bars in the below plot gives the exact count.
 
 <object type="text/html" data="{{ site.baseurl }}/GroupCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
