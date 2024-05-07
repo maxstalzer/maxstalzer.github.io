@@ -123,7 +123,8 @@ We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso a
 </html>
 
 We notice how the majority of attacks are roughly concentrated to the bordering region that is northern Burkina Faso and southern Mali as well as some in western Niger. 
-* **Groups:** The "Unknown" and "Muslim Extremist" attacks are especially concentrated to this bordering area. We see for JNIM how some attacks follow along settlements by the Niger river in Mali, such as through the cities of Timbuktu and Gao. All but three of Boko Haram's attacks were in Niger, and the majority are very concentrated to the eastern border with Nigeria around Lake Chad as well as some more towards the border with Burkina Faso in the west. ISGS attacks are found almost exclusively along the southern border of Mali. We also see that most of the attacks with larger number of deaths were not perpetrated by the unknown group.
+
+The "Unknown" and "Muslim Extremist" attacks are especially concentrated to this bordering area. We see for JNIM how some attacks follow along settlements by the Niger river in Mali, such as through the cities of Timbuktu and Gao. All but three of Boko Haram's attacks were in Niger, and the majority are very concentrated to the eastern border with Nigeria around Lake Chad as well as some more towards the border with Burkina Faso in the west. ISGS attacks are found almost exclusively along the southern border of Mali. We also see that most of the attacks with larger number of deaths were not perpetrated by the unknown group. For the attack types see that many of the incidents with many deaths (larger circles on the map) were armed assaults. Similarly, the military target type seems to show many deaths.
 
 ### What are the differences in terms of attack/target/weapon types between the groups?
 
@@ -198,7 +199,7 @@ For each group we found what share of their incidents are in the different categ
 </body>
 </html>
 
-* **Normalised by attack types:** We see the most common attack type for the six largest groups was armed assault, for the next three largest (AQIM, Ansar al-Dine (Mali) and MUJAO) it is bombings and for the remaining again armed assault. The group which had largest share of armed assault were the Tuareg Guerillas with almost 88% of their attacks being in this category. 
+* **Normalised by attack types:** We see the most common attack type for the six largest groups was armed assault, for the next three largest (AQIM, Ansar al-Dine (Mali) and MUJAO) it is bombings and for the remaining again armed assault. The group which had largest share of armed assault were the Tuareg Guerillas with 88% of their attacks being in this category. 
 
 * **Normalised by target types:** Over half of JNIM attacks were on Military which is significantly more than the other groups. Boko Haram on the contrary has over half of its attacks on Private Citizens & Property, while Ansar al-Dine (Mali) least frequently targeted this category. Notable also is Ansar al-Islam (Burkina Faso) targetting Police significantly more than any group.
 
@@ -217,7 +218,7 @@ There are several groups involved in combating the regime with each having their
 French involvment is not particularly taken well by the local authorities and recent regime changes have significantly impacted public opinion of french government 
 
 * **USA** <br />
-Data up till 2020 shows that the United States had contributed 6 billion USD in military aid in the region. Although US physical military footprint has remained small. It's presence with training programms and other assistance have been noticeable. They have also developed TSCTP (The Trans-Sahara Counterterrorism Partnership) as a multi year partnership to combat terrorism and strenghten security of the region. [12]
+Data up till 2020 shows that the United States had contributed 6 billion USD in military aid in the region. Although US physical military footprint has remained small. It's presence with training programs and other assistance have been noticeable. They have also developed TSCTP (The Trans-Sahara Counterterrorism Partnership) as a multi year partnership to combat terrorism and strenghten security of the region. [12]
 
 
 
