@@ -20,11 +20,11 @@ Plotting terrorism incidents by country for sub-saharan Africa:
 
 ### Lack of coverage 
 When looking at central Sahel region and important note is that some of attacks, especially attacks dating prior to 2010 go unnoticed and do not get reported due to local issues, lack of media coverage and the threat that is posed on getting exposed when reporting events such as terrorist attacks. Media outlets in West Africa are fewer and poorly funded with certain report bias e.g. of attacks with governmental or political motives in the region getting sponsorerd or tolerated by the local authorities. [4]
+<object type="text/html" data="{{ site.baseurl }}/AttackCountYR.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
+
 
 ## Terror Groups
-As the modern world has set more focus on combating the Islamic extremists and global Jihad, reporting of attacks greatly improved with groups such as Boko Haram which had received greater notice due to its islamic attacks on Nigerian government and dominantly Christian society as *****  [5]
 
-### What are the major terror organisations involved?
 Through looking at the GTD we found that the most prevalent terrorism organisations were:
 
 <object type="text/html" data="{{ site.baseurl }}/GroupCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
@@ -42,7 +42,7 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 *Maybe the bar plot of count over the years with the different groups stacked.
 
 ### Where are the different groups most prevalent?
-We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso and Niger. Each point is sized by the number of deaths and colored by the affiliated terror organisation. Hovering over a point shows more details on that attack. Clicking once on a terror group in the legend will hide/unhide it from the map, while double clicking will isolate only this group.
+We plotted all terrorism incidents from 2010 until 2020 for Mali, Burkina Faso and Niger. Each point is sized by the number of deaths and colored by the affiliated terror organisation. Hovering over a point shows more details on that attack. Clicking once on a terror group in the legend will hide/unhide it from the map, while double clicking will isolate only this group.
 
 <object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
@@ -130,7 +130,7 @@ For each group we found what share of their incidents are in the different categ
 ## Counter Terrorism
 *What have been the major counter terrorism movements or governments involved?
 Since Sahel lacks strong and stable politics and governance counter-terrorism operations have greatly struggled to initiate a strong counter-terrorism policy, corruption and lack of power in rural threaten stability. Extremist groups take advantage of this mismanagement and cause disruption in the government. Sahel also holds significant natural resource wealth, making it one of Africa's most affluent areas in terms of natural assets. Placing region in the centre of attention in a global scale. With Russia, France and USA being largest military conrtinbutors to the region. 
-Local military police are very often involved in attacks and to this day from 2010-2020 there have been xx reported causalties from military deaths. 
+Local military police are very often involved in attacks and to this day from 2010-2020 there have been 2791  reported causalties from military deaths and 315 police deaths in the region. 
 
 * **G5 Joint Task Force** <br />
 In 2014 a group of 5 Sahel region countries comprised of five member countres: Burkina Faso, Mali, Niger, Chad and Mauritania. Created to provide the institutional and enforcement structure to provide security within. In support of local government as well as cooperate and exchange criminal and extremism information globally. [11]
@@ -142,9 +142,6 @@ French involvment is not particularly taken well by the local authorities and re
 * **USA** <br />
 Data up till 2020 shows that the United States had contributed 6 billion USD in military aid in the region. Although US physical military footprint has remained small. It's presence with training programms and other assistance have been noticeable. They have also developed TSCTP (The Trans-Sahara Counterterrorism Partnership) as a multi year partnership to combat terrorism and strenghten security of the region. [12]
 
-## Conclusion
-
-### What can we conclude??????????????????
 
 
 ## Reference List
