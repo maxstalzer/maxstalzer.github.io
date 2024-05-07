@@ -42,11 +42,88 @@ Through looking at the GTD we found that the most prevalent terrorism organisati
 *Maybe the bar plot of count over the years with the different groups stacked.
 
 ### Where are the different groups most prevalent?
-We plotted all terrorism incidents from 2010 until 2020 for Mali, Burkina Faso and Niger. Each point is sized by the number of deaths and colored by the affiliated terror organisation. Hovering over a point shows more details on that attack. Clicking once on a terror group in the legend will hide/unhide it from the map, while double clicking will isolate only this group.
+We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso and Niger. Each point is sized by the number of deaths and colored by the select option. Hovering over a point shows more details on that attack. Clicking once on an entry in the legend will hide/unhide it from the map, while double clicking will isolate only this group.
 
-<object type="text/html" data="{{ site.baseurl }}/MapPlot2.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
+<html>
+<head>
+    <title>Map Plot Selector</title>
+    <style>
+        /* Style for dropdown select */
+        .select-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        .select-wrapper select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 10px 40px 10px 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+            width: 200px;
+            border-radius: 5px;
+        }
+        .select-wrapper select:focus {
+            outline: none;
+        }
+        .select-wrapper::after {
+            content: '\25BC';
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        /* Style for options */
+        .select-wrapper select option {
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+    <script>
+        function showMap(plotId) {
+            var plots = document.getElementsByClassName("map-plot");
+            for (var i = 0; i < plots.length; i++) {
+                plots[i].style.display = "none";
+            }
+            var selectedPlot = document.getElementById(plotId);
+            if (selectedPlot) {
+                selectedPlot.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    Show map colored by:
 
-We notice how the majority of attacks are roughly concentrated to the bordering region that is northern Burkina Faso and southern Mali as well as some in western Niger. The "Unknown" and "Muslim Extremist" attacks are especially concentrated to this area. We see for JNIM how some attacks follow along settlements by the Niger river in Mali, such as through the cities of Timbuktu and Gao. All but three of Boko Haram's attacks were in Niger, and the majority are very concentrated to the eastern border with Nigeria around Lake Chad as well as some more towards the border with Burkina Faso in the west. ISGS attacks are found almost exclusively along the southern border of Mali.
+    <select id="mapSelector" onchange="showMap(this.value)">
+        
+        <option value="map1">Groups</option>
+        <option value="map2">Attack Types</option>
+        <option value="map3">Target Types</option>
+        <option value="map4">Weapon Types</option>
+        <option value="map5">Years</option>
+        
+    </select>
+
+    <object id="map1" type="text/html" data="{{ site.baseurl }}/MapPlotGroups.html" class="map-plot" width="1200" height="900" style="display: block; border: none; padding: 0; width:100%; height:30vw"></object>
+
+    <object id="map2" type="text/html" data="{{ site.baseurl }}/MapPlotAttacks.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+
+    <object id="map3" type="text/html" data="{{ site.baseurl }}/MapPlotTargets.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+
+    <object id="map4" type="text/html" data="{{ site.baseurl }}/MapPlotWeapons.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+
+    <object id="map5" type="text/html" data="{{ site.baseurl }}/MapPlotYears.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+
+</body>
+</html>
+
+We notice how the majority of attacks are roughly concentrated to the bordering region that is northern Burkina Faso and southern Mali as well as some in western Niger. 
+* **Groups:** The "Unknown" and "Muslim Extremist" attacks are especially concentrated to this bordering area. We see for JNIM how some attacks follow along settlements by the Niger river in Mali, such as through the cities of Timbuktu and Gao. All but three of Boko Haram's attacks were in Niger, and the majority are very concentrated to the eastern border with Nigeria around Lake Chad as well as some more towards the border with Burkina Faso in the west. ISGS attacks are found almost exclusively along the southern border of Mali. We also see that most of the attacks with larger number of deaths were not perpetrated by the unknown group.
 
 ### What are the differences in terms of attack/target/weapon types between the groups?
 
@@ -108,15 +185,15 @@ For each group we found what share of their incidents are in the different categ
     Normalise graph for:
 
     <select id="plotSelector" onchange="showPlot(this.value)">
-        <option value="plot1">Attack Types</option>
-        <option value="plot2">Target Types</option>
-        <option value="plot3">Weapon Types</option>
+        <option value="bokeh1">Attack Types</option>
+        <option value="bokeh2">Target Types</option>
+        <option value="bokeh3">Weapon Types</option>
     </select>
 
 
-    <object id="plot1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: block; border: none; padding: 0; width:120%; height:50vw"></object>
-    <object id="plot2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:50vw"></object>
-    <object id="plot3" type="text/html" data="{{ site.baseurl }}/weaponTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:50vw"></object>
+    <object id="bokeh1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: block; border: none; padding: 0; width:120%; height:50vw"></object>
+    <object id="bokeh2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:50vw"></object>
+    <object id="bokeh3" type="text/html" data="{{ site.baseurl }}/weaponTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:50vw"></object>
 
 </body>
 </html>
@@ -154,6 +231,6 @@ Data up till 2020 shows that the United States had contributed 6 billion USD in 
 [7] <a href="https://www.dni.gov/nctc/groups/boko_haram.html" target="_blank">dni.gov, Boko Haram info</a> <br />
 [8] <a href="https://ecfr.eu/special/sahel_mapping/isgs" target="_blank">ecfr.eu, ISGS info</a> <br />
 [9] <a href="https://www.dni.gov/nctc/groups/aqim.html" target="_blank">dni.gov, AQIM info</a> <br />
-[10] <a href="https://www.dni.gov/nctc/ftos/ansar_al_dine_fto.html" target="_blank">dni.gov, Ansar al-Dine info</a>
+[10] <a href="https://www.dni.gov/nctc/ftos/ansar_al_dine_fto.html" target="_blank">dni.gov, Ansar al-Dine info</a> <br />
 [11] <a href="https://www.interpol.int/es/Delitos/Terrorismo/Proyectos-de-lucha-contra-el-terrorismo/G5-Sahel" target="_blank">Interpol.int, G5 Sahel</a> <br />
 [12] <a href="https://crsreports.congress.gov/product/pdf/TE/TE10044" target="_blank">CRS Reports, US Counterterrorism in Africa</a> <br />
