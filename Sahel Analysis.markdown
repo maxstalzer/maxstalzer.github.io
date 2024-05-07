@@ -16,20 +16,20 @@ The United Nations states that as a minimum terrorism is defined as "Terrorism i
 It is important to separate government oppression, war crimes, genocides, guerilla warfare from this set as although they can be far worse, these events do not fall into the category of the definition. 
 
 <object type="text/html" data="{{ site.baseurl }}/choroplethMap1.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
-_Figure 1: Plotting terrorism incidents count by country in sub-saharan Africa._
+_Figure 1: Plotting terrorism incidents count by country in sub-saharan Africa._ <br />
 
 ### Lack of coverage 
 When looking at central Sahel region and important note is that some of attacks, especially attacks dating prior to 2010 go unnoticed and do not get reported due to local issues, lack of media coverage and the threat that is posed on getting exposed when reporting events such as terrorist attacks. Media outlets in West Africa are fewer and poorly funded with certain report bias e.g. of attacks with governmental or political motives in the region getting sponsorerd or tolerated by the local authorities. [4]
 
 <object type="text/html" data="{{ site.baseurl }}/YearCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
-_Figure 2: Plotting the yearly count of terrorism incidents._
+_Figure 2: Plotting the yearly count of terrorism incidents._ <br />
 
 ## Terror Groups
 
 Using the Global Terrorism Database we can get the number of incidents perpetrated by each group. Hovering over the bars in the below plot gives the exact count.
 
 <object type="text/html" data="{{ site.baseurl }}/GroupCountBar.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
-_Figure 3: Plotting the count of incidents for each terror organisation._
+_Figure 3: Plotting the count of incidents for each terror organisation._ <br />
 
 1. **Unknown:** The largest group shown on the plot is, by far, the incidents where the affiliated group is unknown. This means while recording the incident it was unclear which group was behind the attack and none claimed responsibility.
 2. **JNIM:** Jama'at Nasr al-Islam wal Muslimin, formed in March of 2017 when the four groups Ansar al-Din, al-Murabitun, the Macina Liberation Front (MLF), and the Sahara Emirate subgroup of al-Qa'ida in the Lands of the Islamic Maghreb (AQIM) merged together. The leader has pledged allegiance to the emirs of AQIM, al-Qa'ida and the Taliban. This group is based in Mali but has attacked all across the Sahel region. [6]
@@ -121,7 +121,7 @@ We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso a
 
 </body>
 </html>
-_Figure 4: Geographic scatter plot of the terror incidents colored by selecting groups, attack/target/weapon types or years._
+_Figure 4: Geographic scatter plot of the terror incidents colored by selecting groups, attack/target/weapon types or years._ <br />
 
 We notice how the majority of attacks are roughly concentrated to the bordering region that is northern Burkina Faso and southern Mali as well as some in western Niger. 
 
@@ -199,7 +199,7 @@ For each group we found what share of their incidents are in the different categ
 
 </body>
 </html>
-_Figure 5: Bar plots for the shares of each groups incidents in the different types of attack/target/weapon._
+_Figure 5: Bar plots for the shares of each groups incidents in the different types of attack/target/weapon._ <br />
 
 * **Normalised by attack types:** We see the most common attack type for the six largest groups was armed assault, for the next three largest (AQIM, Ansar al-Dine (Mali) and MUJAO) it is bombings and for the remaining again armed assault. The group which had largest share of armed assault were the Tuareg Guerillas with 88% of their attacks being in this category. 
 
