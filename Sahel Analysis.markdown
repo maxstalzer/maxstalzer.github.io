@@ -109,11 +109,15 @@ We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso a
         
     </select>
 
-    <object id="plot1" type="text/html" data="{{ site.baseurl }}/MapPlotGroups.html" class="map-plot" width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
-    <object id="plot2" type="text/html" data="{{ site.baseurl }}/MapPlotAttacks.html" class="map-plot" width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
-    <object id="plot3" type="text/html" data="{{ site.baseurl }}/MapPlotTargets.html" class="map-plot" width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
-    <object id="plot4" type="text/html" data="{{ site.baseurl }}/MapPlotWeapons.html" class="map-plot" width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
-    <object id="plot5" type="text/html" data="{{ site.baseurl }}/MapPlotYears.html" class="map-plot" width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
+    <object id="plot1" type="text/html" data="{{ site.baseurl }}/MapPlotGroups.html" class="map-plot" width="1200" height="900" style="display: block; border: none; padding: 0; width:100%; height:30vw"></object>
+
+    <object id="plot2" type="text/html" data="{{ site.baseurl }}/MapPlotAttacks.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+
+    <object id="plot3" type="text/html" data="{{ site.baseurl }}/MapPlotTargets.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+
+    <object id="plot4" type="text/html" data="{{ site.baseurl }}/MapPlotWeapons.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+
+    <object id="plot5" type="text/html" data="{{ site.baseurl }}/MapPlotYears.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
 
 </body>
 </html>
