@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.3.4.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="b2556000-b778-4ad7-a236-6e9c58286aab" data-root-id="p2709" style="display: contents;"></div>
+  
+    <script type="application/json" id="p2743">
+      {"526324d6-8c84-43c9-829e-86d8e7f0277c":{"version":"3.3.4","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p2709","attributes":{"height":350,"x_range":{"type":"object","name":"FactorRange","id":"p2719","attributes":{"factors":["1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p2711","attributes":{"start":0}},"x_scale":{"type":"object","name":"CategoricalScale","id":"p2720"},"y_scale":{"type":"object","name":"LinearScale","id":"p2721"},"title":{"type":"object","name":"Title","id":"p2712","attributes":{"text":"Number of Incidents in Sahel by Year","align":"center"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p2738","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p2732","attributes":{"selected":{"type":"object","name":"Selection","id":"p2733","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p2734"},"data":{"type":"map","entries":[["x",["1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]],["top",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAQAAABQAAAATAAAAAAAAABUAAAADAAAAAQAAAAYAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAMAAAAEgAAAAoAAAAEAAAABgAAABQAAAA/AAAASgAAAKgAAACHAAAAuwAAAP8AAABdAQAAGwEAAA=="},"shape":[46],"dtype":"int32","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p2739","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p2740"}}},"glyph":{"type":"object","name":"VBar","id":"p2735","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.7},"top":{"type":"field","field":"top"},"fill_color":{"type":"value","value":"black"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p2736","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.7},"top":{"type":"field","field":"top"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"black"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p2737","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.7},"top":{"type":"field","field":"top"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"black"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p2718","attributes":{"tools":[{"type":"object","name":"HoverTool","id":"p2741","attributes":{"renderers":"auto","tooltips":[["Year","@x"],["Count","@top"]]}}]}},"toolbar_location":null,"left":[{"type":"object","name":"LinearAxis","id":"p2727","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p2728","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p2729"},"axis_label":"Count","major_label_policy":{"type":"object","name":"AllLabels","id":"p2730"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p2722","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p2723"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p2724"},"axis_label":"Year","major_label_orientation":1.5707963267948966,"major_label_policy":{"type":"object","name":"AllLabels","id":"p2725"}}}],"center":[{"type":"object","name":"Grid","id":"p2726","attributes":{"axis":{"id":"p2722"},"grid_line_color":null}},{"type":"object","name":"Grid","id":"p2731","attributes":{"dimension":1,"axis":{"id":"p2727"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p2743').textContent;
+              const render_items = [{"docid":"526324d6-8c84-43c9-829e-86d8e7f0277c","roots":{"p2709":"b2556000-b778-4ad7-a236-6e9c58286aab"},"root_ids":["p2709"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
