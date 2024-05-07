@@ -46,7 +46,7 @@ We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso a
 
 <html>
 <head>
-    <title>Bokeh Plot Selector</title>
+    <title>Map Plot Selector</title>
     <style>
         /* Style for dropdown select */
         .select-wrapper {
@@ -84,7 +84,7 @@ We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso a
         }
     </style>
     <script>
-        function showPlot(plotId) {
+        function showMap(plotId) {
             var plots = document.getElementsByClassName("map-plot");
             for (var i = 0; i < plots.length; i++) {
                 plots[i].style.display = "none";
@@ -99,25 +99,25 @@ We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso a
 <body>
     Show map colored by:
 
-    <select id="plotSelector" onchange="showPlot(this.value)">
+    <select id="plotSelector" onchange="showMap(this.value)">
         
-        <option value="plot1">Groups</option>
-        <option value="plot2">Attack Types</option>
-        <option value="plot3">Target Types</option>
-        <option value="plot4">Weapon Types</option>
-        <option value="plot5">Years</option>
+        <option value="map1">Groups</option>
+        <option value="map2">Attack Types</option>
+        <option value="map3">Target Types</option>
+        <option value="map4">Weapon Types</option>
+        <option value="map5">Years</option>
         
     </select>
 
-    <object id="plot1" type="text/html" data="{{ site.baseurl }}/MapPlotGroups.html" class="map-plot" width="1200" height="900" style="display: block; border: none; padding: 0; width:100%; height:30vw"></object>
+    <object id="map1" type="text/html" data="{{ site.baseurl }}/MapPlotGroups.html" class="map-plot" width="1200" height="900" style="display: block; border: none; padding: 0; width:100%; height:30vw"></object>
 
-    <object id="plot2" type="text/html" data="{{ site.baseurl }}/MapPlotAttacks.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+    <object id="map2" type="text/html" data="{{ site.baseurl }}/MapPlotAttacks.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
 
-    <object id="plot3" type="text/html" data="{{ site.baseurl }}/MapPlotTargets.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+    <object id="map3" type="text/html" data="{{ site.baseurl }}/MapPlotTargets.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
 
-    <object id="plot4" type="text/html" data="{{ site.baseurl }}/MapPlotWeapons.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+    <object id="map4" type="text/html" data="{{ site.baseurl }}/MapPlotWeapons.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
 
-    <object id="plot5" type="text/html" data="{{ site.baseurl }}/MapPlotYears.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
+    <object id="map5" type="text/html" data="{{ site.baseurl }}/MapPlotYears.html" class="map-plot" width="1200" height="900" style="display: none; border: none; padding: 0; width:100%; height:30vw"></object>
 
 </body>
 </html>
@@ -186,15 +186,15 @@ For each group we found what share of their incidents are in the different categ
     Normalise graph for:
 
     <select id="plotSelector" onchange="showPlot(this.value)">
-        <option value="plot1">Attack Types</option>
-        <option value="plot2">Target Types</option>
-        <option value="plot3">Weapon Types</option>
+        <option value="bokeh1">Attack Types</option>
+        <option value="bokeh2">Target Types</option>
+        <option value="bokeh3">Weapon Types</option>
     </select>
 
 
-    <object id="plot1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: block; border: none; padding: 0; width:120%; height:50vw"></object>
-    <object id="plot2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:50vw"></object>
-    <object id="plot3" type="text/html" data="{{ site.baseurl }}/weaponTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:50vw"></object>
+    <object id="bokeh1" type="text/html" data="{{ site.baseurl }}/attackTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: block; border: none; padding: 0; width:120%; height:50vw"></object>
+    <object id="bokeh2" type="text/html" data="{{ site.baseurl }}/targetTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:50vw"></object>
+    <object id="bokeh3" type="text/html" data="{{ site.baseurl }}/weaponTypeNorm.html" class="bokeh-plot" width="1200" height="400" style="display: none; border: none; padding: 0; width:110%; height:50vw"></object>
 
 </body>
 </html>
