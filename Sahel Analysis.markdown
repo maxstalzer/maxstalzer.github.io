@@ -9,16 +9,14 @@ The Central Sahel is a region in West Africa comprised of the countries Burkina 
 Notably leaders of these countries are not even visiting the more remote northern regions of the countries due to lack of control and security there, the ongoing clashes between violent groups and citizens keep causing chaos. Motives for these groups vary, some have feudal territorial claims, fight for political power, gain and control over smuggling routes for human and drug trafficking over sahara. In 2017 UN passed a bill for global powers to intervene and help combat terrorism in the region.[3] France has greatly contributed with it's military powers, Sahel region has been largest Frances offshores active military operation. 
 
 ### Global Terrorism Database
-It is understandable to argue that the GTD is currently the only database with comprehensive covereage of  global and domestic terrorism.
+It is understandable to argue that the GTD is currently the only database with comprehensive covereage of  global and domestic terrorism. Data base draws most of its information from the media reports putting focus on not only interantional but also domestic incidents happening around the globe.
 
-Terrorism definition by the UN that as a minimum terrorism is "Terrorism involves the intimidation or coercion of populations or governments through the threat or perpetration of violence, causing death, serious injury or the taking of hostages." [5]
+Terrorism definition by the UN that as a minimum terrorism is "Terrorism involves the intimidation or coercion of populations or governments through the threat or perpetration of violence, causing death, serious injury or the taking of hostages." [4]
 
 It is important to seperate government oppression, war crimes, genocides, guerilla warfare from this set as although they can be far worse, these events do not fall into the category of the definition. 
 
-### Plot 1 INDex, Terror data, world map?? Need an intro plot 
-
 ### Lack of coverage 
-When looking at central Sahel region and important note is that some of attacks, especially attacks dating prior 2010 go unnoticed and do not get reported due to local issues, lack of media coverage and the threat that is posed on getting exposed when reporting events such as terrorist attacks. Media outlets in west africa are fewer and poorly funded with certain report bias e.g. of attacks with governmental or political motives in the region getting sponsorerd or tolerated by the local authorities. [4]
+When looking at central Sahel region and important note is that some of attacks, especially attacks dating prior 2010 go unnoticed and do not get reported due to local issues, lack of media coverage and the threat that is posed on getting exposed when reporting events such as terrorist attacks. Media outlets in west africa are fewer and poorly funded with certain report bias e.g. of attacks with governmental or political motives in the region getting sponsorerd or tolerated by the local authorities. [5]
 
 ## Terror Groups
 As modern world has set more focus in combating the Islamic extremists and global Jihad, reporting of attacks greatly imporoved with groups such as Boko Haram had revceived greater notice due to it's islamic attakcs on Nigerian government and dominantly Christian society as  [5]
