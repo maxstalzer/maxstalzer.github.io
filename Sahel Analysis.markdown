@@ -99,7 +99,7 @@ We plotted all terrorism incidents from 1970 until 2020 for Mali, Burkina Faso a
 <body>
     Show map colored by:
 
-    <select id="plotSelector" onchange="showMap(this.value)">
+    <select id="mapSelector" onchange="showMap(this.value)">
         
         <option value="map1">Groups</option>
         <option value="map2">Attack Types</option>
