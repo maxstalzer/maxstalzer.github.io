@@ -127,7 +127,7 @@ We notice how the majority of attacks are roughly concentrated to the bordering 
 
 ### What are the differences in terms of attack/target/weapon types between the groups?
 
-For each group we found what share of their incidents are in the different categories of attack, target and weapon types. Below click to show graph for the different types, hover on the bars to see what share that category constitutes.
+For each group we found what share of their incidents are in the different categories of attack, target and weapon types. Below select graph for the different types and hover on the bars to see what share that category constitutes.
 
 <html>
 <head>
