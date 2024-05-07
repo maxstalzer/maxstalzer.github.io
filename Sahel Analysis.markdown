@@ -16,7 +16,7 @@ The United Nations states that as a minimum terrorism is defined as "Terrorism i
 It is important to separate government oppression, war crimes, genocides, guerilla warfare from this set as although they can be far worse, these events do not fall into the category of the definition. 
 
 Plotting terrorism incidents by country for sub-saharan Africa:
-<object type="text/html" data="{{ site.baseurl }}/choroplethMap.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
+<object type="text/html" data="{{ site.baseurl }}/choroplethMap1.html"  width="1200" height="900" style="border: none; padding: 0; width:100%; height:30vw"></object>
 
 ### Lack of coverage 
 When looking at central Sahel region and important note is that some of attacks, especially attacks dating prior to 2010 go unnoticed and do not get reported due to local issues, lack of media coverage and the threat that is posed on getting exposed when reporting events such as terrorist attacks. Media outlets in West Africa are fewer and poorly funded with certain report bias e.g. of attacks with governmental or political motives in the region getting sponsorerd or tolerated by the local authorities. [4]
