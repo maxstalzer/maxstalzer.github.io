@@ -9,7 +9,7 @@ The Central Sahel is a region in West Africa comprised of the countries Burkina 
 Notably leaders of these countries are not even visiting the more remote northern regions of each of the countries due to the lack of control and security there, the ongoing clashes between violent groups and citizens causing chaos. Motives for these groups vary, some have feudal territorial claims, fight for political power, gain and control over smuggling routes for human and drug trafficking over Sahara. In 2017 the United Nations passed a bill for global powers to intervene and help combat terrorism in the region. [3] France has greatly contributed with it's military powers, with the Sahel being its largest offshore active military operation. 
 
 ### Global Terrorism Database
-It is reasonable to argue that the GTD is currently the only database with comprehensive covereage of global and domestic terrorism.
+It is understandable to argue that the GTD is currently the only database with comprehensive covereage of  global and domestic terrorism. Data base draws most of its information from the media reports putting focus on not only interantional but also domestic incidents happening around the globe.
 
 The United Nations states that as a minimum terrorism is defined as "Terrorism involves the intimidation or coercion of populations or governments through the threat or perpetration of violence, causing death, serious injury or the taking of hostages." [4]
 
